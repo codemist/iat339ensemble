@@ -1,0 +1,30 @@
+
+:root {
+    --cto-color: #5BAF80;
+    --lightgray-color: #f2f2f2;
+  }
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin:50px 50px 50px 50px;
+}
+
+a {
+    font-weight:800;
+    text-decoration: none;
+    color:var(--cto-color);
+}
+
+code {
+    background:var(--lightgray-color);
+    padding:10px 10px 10px 10px;
+}
+
+#anchor_links li {
+    padding-bottom:20px;
+}
+
+li {
+    padding-bottom:50px;
+}
+
