@@ -21,9 +21,8 @@ code {
     
 }
 
-#anchor_links li, #citations_body li {
 .button {
-  backgrousnd-color: #6EB78E;
+  background-color: #6EB78E;
   border: none;
   color: white;
   font:inherit;
@@ -56,10 +55,7 @@ padding: 12px 36px;
 font:inherit;
   box-sizing: border-box;
 
-
-
 }
-
 
 .btn {
    
@@ -69,6 +65,7 @@ font:inherit;
     font: inherit;
     border-style: none;
    
+}
 
 #anchor_links li {
     padding-bottom:20px;
@@ -98,7 +95,6 @@ li {
 .right_float{
     float:right;
 }
-
 
 
 .nav_module .title {
