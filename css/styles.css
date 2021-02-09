@@ -21,6 +21,7 @@ code {
     
 }
 
+
 .button {
   background-color: #6EB78E;
   border: none;
@@ -94,6 +95,10 @@ li {
 
 .right_float{
     float:right;
+}
+
+li .swatches {
+    padding-bottom:40px;
 }
 
 
