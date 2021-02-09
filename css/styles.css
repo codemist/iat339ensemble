@@ -20,7 +20,7 @@ code {
     padding:10px 10px 10px 10px;
 }
 
-#anchor_links li {
+#anchor_links li, #citations_body li {
     padding-bottom:20px;
 }
 
