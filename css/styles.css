@@ -34,6 +34,21 @@ code {
   cursor: pointer;
 }
 
+.button2{
+background-color: #F6F6F6;
+  border: none;
+  color: #B0B0B0;
+  font:inherit;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
 .form {
 padding: 12px 36px;
 font:inherit;
