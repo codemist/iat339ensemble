@@ -20,6 +20,39 @@ code {
     padding:10px 10px 10px 10px;
 }
 
+.button {
+  background-color: #6EB78E;
+  border: none;
+  color: white;
+  font:inherit;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.form {
+padding: 12px 36px;
+font:inherit;
+  box-sizing: border-box;
+
+
+
+}
+
+
+.btn {
+   
+    background: #B9B9B9;
+    padding: 12px 36px;
+    margin-left: 10px;
+    font: inherit;
+    border-style: none;
+   
+
 #anchor_links li {
     padding-bottom:20px;
 }
