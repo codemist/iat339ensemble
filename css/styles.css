@@ -101,6 +101,15 @@ gridpointmobile {
     margin-left: 1em;
 }
 
+.contact_module{
+ display: grid;
+    
+  padding-left: 30px;
+padding-top: 30px;
+padding-right: 20px;
+padding-bottom: 20px;
+    background:var(--lightgray-color);
+}
 /***Stories Grid****/
 .stories_wrapper {
     display: grid;
