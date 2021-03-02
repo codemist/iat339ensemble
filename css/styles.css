@@ -1,15 +1,20 @@
 /**Color Variables**/
+
 :root {
-    --cto-color: #5BAF80; /**Call to Action**/
-    --lightgray-color: #f2f2f2; /**Light gray bg**/
+    --cto-color: #5BAF80;
+    /**Call to Action**/
+    --lightgray-color: #f2f2f2;
+    /**Light gray bg**/
 }
 
 body {
-    font-family: 'Karla', sans-serif; /**Main font family**/
+    font-family: 'Karla', sans-serif;
+    /**Main font family**/
     margin: 50px 50px 50px 50px;
 }
 
 /**Links**/
+
 a {
     font-weight: 800;
     text-decoration: none;
@@ -17,6 +22,7 @@ a {
 }
 
 /*Code Snippets*/
+
 code {
     background: var(--lightgray-color);
     line-height: 2em;
@@ -24,11 +30,13 @@ code {
 }
 
 /***SIDEBAR ANCHOR LINKS****/
+
 .sidebar {
     position: fixed;
 }
 
 /***Make Sidebar relative when mobile****/
+
 @media screen and (max-width:1080px) {
     .sidebar {
         position: relative;
@@ -38,6 +46,7 @@ code {
 }
 
 /***Sidebar Anchor Links****/
+
 .sidebar a {
     width: 80%;
     display: block;
@@ -52,12 +61,14 @@ code {
 }
 
 /***Sidebar Anchor Links Hover****/
+
 .sidebar a:hover {
     background: var(--cto-color);
     color: white;
 }
 
 /***Main Page container, 2 columns****/
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -66,11 +77,13 @@ code {
 }
 
 /***Main Page column****/
+
 .container .giant_column {
     width: 100%;
 }
 
 /***Media Queries for Main Page, shrink into 1 column****/
+
 @media screen and (max-width:900px) {
     .container {
         display: grid;
@@ -79,6 +92,7 @@ code {
 }
 
 /* Default grid description when mobile */
+
 gridpoint {
     background: #eee;
     font-weight: normal;
@@ -90,6 +104,7 @@ gridpoint {
 }
 
 /* Enable grid description when mobile */
+
 gridpointmobile {
     display: none;
     background: #eee;
@@ -101,16 +116,19 @@ gridpointmobile {
     margin-left: 1em;
 }
 
-.contact_module{
- display: grid;
-    
-  padding-left: 30px;
-padding-top: 30px;
-padding-right: 20px;
-padding-bottom: 20px;
-    background:var(--lightgray-color);
+/***CONTACT MODULE***/
+.contact_module {
+    display: grid;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background: var(--lightgray-color);
+
 }
+
 /***Stories Grid****/
+
 .stories_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -135,6 +153,7 @@ padding-bottom: 20px;
 }
 
 /* Image class for stories */
+
 .stories_img {
     width: 100%;
     height: auto;
@@ -144,6 +163,7 @@ padding-bottom: 20px;
 /************* SETS GRID *************/
 
 /* Wrapper class for sets, 6 rows default on desktop */
+
 .set_wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -153,14 +173,15 @@ padding-bottom: 20px;
 }
 
 /* Media Query for sets */
+
 @media screen and (max-width:800px) {
     .set_wrapper {
         display: grid;
-        grid-template-columns: 1fr; /* Shrink to 1 column */
+        grid-template-columns: 1fr;
+        /* Shrink to 1 column */
         grid-template-rows: auto;
     }
-    
-/* Change grid and row start-end values for mobile */
+    /* Change grid and row start-end values for mobile */
     .set_wrapper .set_img1 {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -242,16 +263,19 @@ h3 {
     grid-row-end: 3;
 }
 
-
 /************* CATEGORY GRID *************/
+
 /* Wrapper for product category, 4 columns default for desktop */
+
 .category_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 6em;
     column-gap: 1em;
 }
+
 /* Start-end column for each image */
+
 .cl1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -298,6 +322,7 @@ h3 {
 }
 
 /* Image class for category images */
+
 .chairlisting_img {
     width: 100%;
     height: 100%;
@@ -314,12 +339,14 @@ h3 {
 }
 
 /* Product Name and Price */
+
 .listing_description {
     margin-top: 1em;
     position: absolute;
 }
 
 /* Media Query for Category Grid Mobile */
+
 @media screen and (max-width:800px) {
     .category_wrapper {
         display: grid;
@@ -330,7 +357,6 @@ h3 {
         row-gap: 6em;
         column-gap: 1em;
     }
-
     /* New start-end column values for mobile */
     .cl1, .cl5, .cl7 {
         grid-column-start: 1;
@@ -353,9 +379,11 @@ h3 {
 }
 
 /*************NAV BAR*************/
+
 /*Tutorial: https://www.w3schools.com/howto/howto_js_topnav.asp*/
 
 /* Brand title */
+
 .nav_module .title {
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 2em;
@@ -368,6 +396,7 @@ h3 {
 }
 
 /* Main nav container */
+
 .nav_module {
     background: var(--lightgray-color);
     padding: 20px 30px 25px 30px;
@@ -376,6 +405,7 @@ h3 {
 }
 
 /* Nav Links */
+
 .nav_module a {
     float: left;
     text-align: center;
@@ -387,21 +417,25 @@ h3 {
 }
 
 /* Nav Hover effect */
+
 .nav_module a:hover {
     color: gray;
 }
 
 /* Float nav links to the right */
+
 .right_float {
     float: right;
 }
 
 /* Font Awesome Hamburger Icon */
+
 .nav_module .icon {
     display: none;
 }
 
 /* Media Query for Nav Module */
+
 @media screen and (max-width: 1000px) {
     .nav_module a:not(.title) {
         opacity: 0;
@@ -461,6 +495,7 @@ h3 {
 }
 
 /***BUTTONS****/
+
 .button {
     background-color: #6EB78E;
     border: none;
@@ -589,6 +624,7 @@ h1 {
 }
 
 /***PRODUCT MODULE***/
+
 .product_module {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -599,6 +635,7 @@ h1 {
 }
 
 /***Product Description***/
+
 .product_module .desc {
     padding-top: 10em;
     float: right;
@@ -606,11 +643,12 @@ h1 {
 }
 
 /***Media Query for Product Module***/
+
 @media screen and (max-width: 900px) {
     .product_module {
         display: grid;
-        grid-template-columns: 1fr; /***Make 1 Column***/
-
+        grid-template-columns: 1fr;
+        /***Make 1 Column***/
     }
     .product_module .desc {
         padding-top: 2em;
@@ -620,6 +658,7 @@ h1 {
 }
 
 /***Image class for Product Module (main product) ***/
+
 .product_img img {
     width: 100%;
     height: 100%;
@@ -627,6 +666,7 @@ h1 {
 }
 
 /***Image class for Product Module (small images)***/
+
 .sample_img {
     display: inline;
 }
@@ -646,6 +686,7 @@ h1 {
 }
 
 /****ORDER SUMMARY****/
+
 .order_summary {
     width: 400px;
     display: grid;
@@ -654,6 +695,7 @@ h1 {
 }
 
 /**Media Query for Order Summary**/
+
 @media screen and (max-width: 600px) {
     .order_summary {
         width: 100%;
@@ -669,6 +711,7 @@ h1 {
 }
 
 /**Purchase and Add Promo code buttons**/
+
 .order_summary_btns {
     float: right;
     margin-right: 1em;
