@@ -771,6 +771,11 @@ h1 {
 
 /************* PRODUCT REVIEW FORM *************/
 
+.product_review{
+    background:var(--lightgray-color);
+    width: 400px;
+    padding: 40px;
+}
 
 .fa {
   font-size: 25px;
