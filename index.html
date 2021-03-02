@@ -3,12 +3,11 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
-
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -16,291 +15,523 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <title>Styleguide</title>
 
 <body>
+    <div class="container">
+        <!--Left Sidebar for Desktop-->
+        <div class="giant_column">
+            <div class="sidebar">
+                <h1>Styleguide</h1>
+            <a href="#interactive_elements">Basic Interactive Elements</a>
+            <a href="#text_styling">Text Styling</a>
+            <a href="#modular_patterns">Modular Pattern Elements</a>
+            <a href="citations.html">Citations</a>
+            <a href="sitemap_and_mockup.html">Sitemap & Wireframes</a>
+            </div>
+        </div>
+         <!--Main Right Sidebar for Desktop-->
+        <div class="giant_column">
 
-    <section id="anchor_links">
-        <h1>Styleguide</h1>
-        <h3>Links
-            <ul>
-                <li> <a href="#interactive_elements">Basic Interactive Elements</a></li>
-                <li> <a href="#text_styling">Text Styling</a></li>
-                <li> <a href="#modular_patterns">Modular Pattern Elements</a></li>
-                <li> <a href="citations.html">Citations</a></li>
-                <li> <a href="sitemap_and_mockup.html">Sitemap & Wireframes</a></li>
-            </ul>
-        </h3>
-    </section>
+             <!--Interactive Elements-->
+            <a name="interactive_elements"></a>
+            <section id="interactive_elements">
+                <h1>Basic Interactive Elements</h1>
+                    <div class="list">
+                          <!--In-text Link-->
+                        <h2>In-Text Link</h2>
+                        <div class="list_description">This is some body text. Within the body text, there is an in-text
+                            <a href="index.html">link</a> you can click.</div>
+                        <h3>Sample Code</h3>
+                        <code> &lt;a href="link here"&gt; link &lt;/a&gt;</code>
+                    </div>
+                    <div class="list">
+                         <!--Call to Action BTN-->
+                        <h2>Call to Action Button</h2>
+                        <div class="list_description"> This is our call to action body, a bolded boxed button in bright
+                            green.
+                        
+                            <br>
+                            <br>
+                            <a href="#" class="button">SEND</a>
+                        </div>
+                        <h3>Sample Code</h3>
+                        <code>  &lt;a href="#" class="button"&gt;SEND&lt;/a&gt; </code>
+                    </div>
+                    <div class="list">
+                         <!--Submit & Reset Btn-->
+                        <h2>Submit and Reset Button for Forms</h2>
+                        <div class="list_description">This is our submit and reset button for forms, we used a bright
+                            green
+                            bolded boxed button for submit and a neutral grey button for reset.</div>
+                        <br>
+                        <br>
+                        <a href="#" class="button">SUBMIT</a> <a href="#" class="button2">RESET</a>
 
-    <a name="interactive_elements"></a>
-    <section id="interactive_elements">
-        <h1>Basic Interactive Elements</h1>
-        <ul>
-            <li>
-                <h3>In-Text Link</h3>
-                <div class="list_description">This is some body text. Within the body text, there is an in-text <a
-                        href="index.html">link</a> you can click.</div>
-                <h3>Sample Code</h3>
-                <code> &lt;a href="link here"&gt; link &lt;/a&gt;</code>
-            </li>
-
-            <li>
-                <h3>Call to Action Button</h3>
-                <div class="list_description"> This is our call to action body, a bolded boxed button in bright green.
-                    <br>
-                    <br>
-                                    <a href="#" class="button">SEND</a>
-
-                </div>
-                <h3>Sample Code</h3>
-                                  <code>  &lt;a href="#" class="button"&gt;SEND&lt;/a&gt; </code>
-            </li>
-
-            <li>
-                <h3>Submit and Reset Button for Forms</h3>
-                <div class="list_description">This is our submit and reset button for forms, we used a bright green
-                    bolded boxed button for submit and a neutral grey button for reset.</div>
-                    <br>
-                    <br>
-                                    <a href="#" class="button">SUBMIT</a> <a href="#" class="button2">RESET</a>
-
-                <h3>Sample Code</h3>
-                <code>   &lt;a href="#" class="button"&gt;SUBMIT&lt;/a&gt; &lt;a href="#" class="button2"&gt;RESET&lt;/a&gt; </code>
-
-
-            </li>
-
-            <li>
-                <h3>Text Input Field and a Label</h3>
-                <div class="list_description">This is our text input field for subscribing to our emails newsletter.
-                    <br>
-                    <br>
-                    <form class="form">
-                            <input type="email" class="form" placeholder="YOUR EMAIL" />
-                            <button type="button" class="btn">SUBSCRIBE</button>
-                </div>
-                <h3>Sample Code</h3>
-
-                <div class="container">
-                    <div class="container__item">
+                        <h3>Sample Code</h3>
                         <code>
-                             &lt;form class="form"&gt;
-                            &lt;input type="email" class="form" placeholder="YOUR EMAIL" /&gt;
+                    &lt;a href="#" class="button"&gt;SUBMIT&lt;/a&gt; &lt;a href="#" class="button2"&gt;RESET&lt;/a&gt; </code>
+
+                    </div>
+
+                    <div class="list">
+                         <!--Text Input and Label-->
+                        <h2>Text Input Field and a Label</h2>
+                        <div class="list_description">This is our text input field for the contact page.</div>
+                            <br>
+                            <br>
+                            <form class="form">
+                                <h3>Your name</h3>
+                                <input type="email" class="form" placeholder="" />
+                
+                        <h3>Sample Code</h3>
+
+                                <code>
+                            &lt;form class="form"&gt;
+                            &lt;h3&gt;Your name &lt;/h3&gt;
+                            &lt;input type="email" class="form" placeholder="" /&gt;
                             &lt;button type="button" class="btn"&gt;SUBSCRIBE&lt;/button&gt; </code>
-                        </form>
+                                </form>
+                
                     </div>
 
-                    <div class="container__item container__item--bottom">
-                    </div>
-                </div>
-            </li>
+                    <div class="list">
+                        <!--Color Swatches-->
+                        <h2>Colour swatches</h2>
 
-
-            <li>
-
-                <h3>Colour swatches</h3>
-
-                <div class="swatches">
-                    <img src="img/darkgreen.png" alt="darkgreen">
-                    <p>Muted Forest Green - Main brand colour </p>
-                    <code> hex:#738A7D, rgb:(115,138,125) </code>
-                </div>
-
-                <div class="swatches">
-                    <img src="img/green.png" alt="green">
-                    <p> Bright Green - Call to action</p>
-                    <code> hex:#6EB78E, rgb:(110,183,142)</code>
-                </div>
-
-                <div class="swatches">
-
-                    <img src="img/darkgrey.png" alt="darkgrey">
-                    <p> Neutral Grey - For text and supporting elements</p>
-                    <code> hex:#E2E2E2, rgb:(226,226,226)</code>
-                </div>
-
-
-                <div class="swatches">
-
-                    <img src="img/lightgrey.png" alt="lightgrey">
-                    <p> Light Grey - Background for section modules</p>
-                    <code> hex:#F2F2F2, rgb:(242,242,242)</code>
-                </div>
-
-
-                <div class="swatches">
-
-                    <img src="img/black.png" alt="black">
-                    <p> Dark Neutral - Dark backgrounds for lighter elements to pop out against</p>
-                    <code> hex:#2C2C2C, rgb:(44,44,44)</code>
-                </div>
-
-
-                <div class="swatches">
-                    <p>Sample html code:</p>
-                    <code> &lt;img src=&quot;foldername/imagename.filename&quot; alt=&quot;explaination&quot;&gt; </code>
-                    <p>
-                        <code> &lt;p&gt;text&lt;/p&gt; </code>
-                    </p>
-                </div>
-
-
-
-            </li>
-
-        </ul>
-
-    </section>
-
-
-    <a name="text_styling"></a>
-    <section id="text_styling">
-        <h1>Text Styling</h1>
-
-        <ul>
-            <li>
-                <h3>Headers</h3>
-                <div class="list_description">
-                    <h1>This is H1.</h1>
-                    <p>
-                    <h2>This is H2.</h2>
-                    </p>
-                    <p>
-                    <h3>This is H3.</h3>
-                    </p>
-                </div>
-
-                <h3>Sample Code</h3>
-
-                <p><code>&lt;h1&gt;This is H1&lt;/h1&gt;</code></p>
-                <p><code>&lt;h2&gt;This is H2&lt;/h2&gt;</code></p>
-                <p><code>&lt;h3&gt;This is H3&lt;/h3&gt;</code></p>
-
-            </li>
-        </ul>
-
-    </section>
-
-    <a name="modular_patterns"></a>
-    <section id="modular_patterns">
-        <h1>Modular Patterns</h1>
-
-        <ul>
-            <li>
-                <h3>Main Navigation Module</h3>
-                <div class="nav_module">
-                    <a>shop</a>
-                    <a>on sale</a>
-                    <a>blog</a>
-                    <a>stories</a>
-                    <div class="right_float">
-                        <a>user</a>
-                        <a>cart</a>
-                    </div>
-
-                    <a class="title">ensemble</a>
-                </div>
-
-                <h3>Sample Code</h3>
-
-                <code>&lt;div class=&quot;nav_module&quot;&gt;
-
-                    &lt;a&gt;shop&lt;/a&gt; 
-                    &lt;a&gt;on sale&lt;/a&gt;  
-                    &lt;a&gt;blog&lt;/a&gt; 
-                    &lt;a&gt;stories&lt;/a&gt; 
-                    &lt;div class=&quot;right_float&quot;&gt; 
-                    &lt;a&gt;user&lt;/a&gt;  
-                    &lt;a&gt;cart&lt;/a&gt;  
-                    &lt;/div&gt;</code>
-            </li>
-
-            <li>
-                <h3>UI of Single Product</h3>
-                <div class="product_module">
-                    <div class="product_img">
-                        <img src="img/theperfectchair.png">
-                    </div>
-                    <div class="desc">
-                        <h2>the perfect chair</h2>
-                        <h4><strong>$193</strong></h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. </h5>
-                        <a href="#" class="button3">ADD TO CART</a>
-                        </br>
-                        <div class="sample_img">
-                            <img src="img/sampleimg1.png">
-                            <img src="img/sampleimg2.png">
-                            <img src="img/sampleimg3.png">
+                        <div class="swatches_wrapper">
+                         
+                            <div class="swatches">
+                                <img src="img/darkgreen.png" alt="darkgreen" class="colorswatch">
+                                <p>
+                                    <verybold>Muted Forest Green</verybold></br> Main brand colour
+                                </p>
+                                <code> hex:#738A7D, rgb:(115,138,125) </code>
+                            </div>
+                            <div class="swatches">
+                                <img src="img/green.png" alt="green" class="colorswatch">
+                                <p>
+                                    <verybold>Bright Green</verybold> </br>Call to action
+                                </p>
+                                <code> hex:#6EB78E, rgb:(110,183,142)</code>
+                            </div>
+                            <div class="swatches">
+                                <img src="img/darkgrey.png" alt="darkgrey" class="colorswatch">
+                                <p>
+                                    <verybold>Neutral Grey</verybold></br> For text and supporting elements
+                                </p>
+                                <code> hex:#E2E2E2, rgb:(226,226,226)</code>
+                            </div>
+                            <div class="swatches">
+                                <img src="img/lightgrey.png" alt="lightgrey" class="colorswatch">
+                                <p>
+                                    <verybold>Light Grey</verybold> </br>Background for section modules
+                                </p>
+                                <code> hex:#F2F2F2, rgb:(242,242,242)</code>
+                            </div>
+                            <div class="swatches">
+                                <img src="img/black.png" alt="black" class="colorswatch">
+                                <p>
+                                    <verybold>Dark Neutral</verybold> </br>Dark backgrounds for lighter elements to pop
+                                    out against
+                                </p>
+                                <code> hex:#2C2C2C, rgb:(44,44,44)</code>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
 
-            <li>
-                <h3>Grid Structure</h3>
-            </li>
+            </section>
 
-            <li>
-                <h3>Order Summary Module</h3>
-                <div class="order_summary">
-
-                    <div class="cart_container">
-                        <h1>Order Summary</h1>
-                        <div class="cart_item">
-
-                            <img src="img/theperfectchair.png">
-                            <div class="cart_item_desc">
-                                <h5>The Perfect Chair</h5>
-                                <h5><strong>$198</strong></h5>
-                            </div>
-
+            <!--Text Styling-->
+            <a name="text_styling"></a>
+            
+            <section id="text_styling">
+                
+                <h1>Text Styling</h1>
+          
+                    <div class="list">
+                        <h2>Headers</h2>
+                        <div class="list_description">
+                            <h1>This is H1.</h1>
+                            <p>
+                            <h2>This is H2.</h2>
+                            </p>
+                            <p>
+                            <h3>This is H3.</h3>
+                            </p>
                         </div>
-                        <div class="cart_item">
-                            <img src="img/theperfectchair.png">
 
-                            <div class="cart_item_desc">
-                                <h5>The Perfect Chair</h5>
-                                <h5><strong>$198</strong></h5>
+                        <h3>Sample Code</h3>
+
+                        <p><code>&lt;h1&gt;This is H1&lt;/h1&gt;</code></p>
+                        <p><code>&lt;h2&gt;This is H2&lt;/h2&gt;</code></p>
+                        <p><code>&lt;h3&gt;This is H3&lt;/h3&gt;</code></p>
+
+                    </div>
+          
+
+            </section>
+
+            <!--Modular Patterns-->
+            <a name="modular_patterns"></a>
+            <section id="modular_patterns">
+                <h1>Modular Patterns</h1>
+          
+                    <div class="list">
+                         <!--Navigation Module tutorial from https://www.w3schools.com/howto/howto_js_topnav.asp-->
+                        <h2>Main Navigation Module</h2>
+                        <div class="nav_module" id="myTopnav">
+                            <a href="#" class="active">shop</a>
+                            <a href="#">on sale</a>
+                            <a href="#">blog</a>
+                            <a href="#">stories</a>
+                            <div class="right_float"> 
+                                <a href="#">user</a>
+                                <a href="#">cart <strong>(3)</strong></a>
                             </div>
+                                 <!--Javascript for Collapsing Links-->
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <a class="title">ensemble</a>
+                        </div>
 
-                            <div style="padding-top:20px;">
-                                <h5>Subtotal <strong>$198</strong></h5>
-                                <h5>Tax <strong>$10</strong></h5>
-                                <h5>Shipping <strong>FREE</strong></h5>
-                                <h5>Total <strong>$208</strong></h5>
+                        <h3>Sample Code</h3>
 
-                                <div style="padding-top:20px;">
-                                    <div style="float:right;padding-right:20px;margin-top:-15px;"> <a href="#"
-                                            class="button">PURCHASE</a></div>
-                                    <div style="float:left;padding-left:0px;margin-top:-15px;"> <a href="#"
-                                            class="button2">ADD PROMO CODE</a></div>
+                        <code>
+                            &#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#110;&#97;&#118;&lowbar;&#109;&#111;&#100;&#117;&#108;&#101;&quot;&#32;&#105;&#100;&equals;&quot;&#109;&#121;&#84;&#111;&#112;&#110;&#97;&#118;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#97;&#99;&#116;&#105;&#118;&#101;&quot;&gt;&#115;&#104;&#111;&#112;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&gt;&#111;&#110;&#32;&#115;&#97;&#108;&#101;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&gt;&#98;&#108;&#111;&#103;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&gt;&#115;&#116;&#111;&#114;&#105;&#101;&#115;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#114;&#105;&#103;&#104;&#116;&lowbar;&#102;&#108;&#111;&#97;&#116;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&gt;&#117;&#115;&#101;&#114;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&gt;&#99;&#97;&#114;&#116;&#32;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lpar;&#51;&rpar;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&colon;&#118;&#111;&#105;&#100;&lpar;&#48;&rpar;&semi;&quot;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#105;&#99;&#111;&#110;&quot;&#32;&#111;&#110;&#99;&#108;&#105;&#99;&#107;&equals;&quot;&#109;&#121;&#70;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&lpar;&rpar;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#105;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#102;&#97;&#32;&#102;&#97;&#45;&#98;&#97;&#114;&#115;&quot;&gt;&lt;&sol;&#105;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#116;&#105;&#116;&#108;&#101;&quot;&gt;&#101;&#110;&#115;&#101;&#109;&#98;&#108;&#101;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
 
+                        </code>
+                    </div>
+                   
+                
+                      <!--Product Module-->
+                    <div class="list">
+                        <h2>UI of Single Product</h2>
+                        <div class="product_module">
+                            <div class="product_img">
+                                <img src="img/theperfectchair.png">
+                            </div>
+                            <div class="desc">
+                                <h2>the perfect chair</h2>
+                                <h3><strong>$193</strong></h3>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. </h3>
+                                <a href="#" class="button3">ADD TO CART</a>
+                                </br>
+                                <div class="sample_img">
+                                    <img src="img/sampleimg1.png">
+                                    <img src="img/sampleimg2.png">
+                                    <img src="img/sampleimg3.png">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 style="padding-top:1em;">Sample Code</h3>
+                        <code>
+                            &lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#112;&#114;&#111;&#100;&#117;&#99;&#116;&lowbar;&#109;&#111;&#100;&#117;&#108;&#101;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#112;&#114;&#111;&#100;&#117;&#99;&#116;&lowbar;&#105;&#109;&#103;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#105;&#109;&#103;&#32;&#115;&#114;&#99;&equals;&quot;&#105;&#109;&#103;&sol;&#116;&#104;&#101;&#112;&#101;&#114;&#102;&#101;&#99;&#116;&#99;&#104;&#97;&#105;&#114;&period;&#112;&#110;&#103;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#100;&#101;&#115;&#99;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#50;&gt;&#116;&#104;&#101;&#32;&#112;&#101;&#114;&#102;&#101;&#99;&#116;&#32;&#99;&#104;&#97;&#105;&#114;&lt;&sol;&#104;&#50;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#51;&gt;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&dollar;&#49;&#57;&#51;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#104;&#51;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#51;&gt;&#76;&#111;&#114;&#101;&#109;&#32;&#105;&#112;&#115;&#117;&#109;&#32;&#100;&#111;&#108;&#111;&#114;&#32;&#115;&#105;&#116;&#32;&#97;&#109;&#101;&#116;&comma;&#32;&#99;&#111;&#110;&#115;&#101;&#99;&#116;&#101;&#116;&#117;&#114;&#32;&#97;&#100;&#105;&#112;&#105;&#115;&#99;&#105;&#110;&#103;&#32;&#101;&#108;&#105;&#116;&comma;&#32;&#115;&#101;&#100;&#32;&#100;&#111;&#32;&#101;&#105;&#117;&#115;&#109;&#111;&#100;&#32;&#116;&#101;&#109;&#112;&#111;&#114;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#105;&#110;&#99;&#105;&#100;&#105;&#100;&#117;&#110;&#116;&#32;&#117;&#116;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#108;&#97;&#98;&#111;&#114;&#101;&#32;&#101;&#116;&#32;&#100;&#111;&#108;&#111;&#114;&#101;&#32;&#109;&#97;&#103;&#110;&#97;&#32;&#97;&#108;&#105;&#113;&#117;&#97;&period;&#32;&#85;&#116;&#32;&#101;&#110;&#105;&#109;&#32;&#97;&#100;&#32;&#109;&#105;&#110;&#105;&#109;&#32;&#118;&#101;&#110;&#105;&#97;&#109;&comma;&#32;&#113;&#117;&#105;&#115;&#32;&#110;&#111;&#115;&#116;&#114;&#117;&#100;&#32;&#101;&#120;&#101;&#114;&#99;&#105;&#116;&#97;&#116;&#105;&#111;&#110;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#117;&#108;&#108;&#97;&#109;&#99;&#111;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#108;&#97;&#98;&#111;&#114;&#105;&#115;&#32;&#110;&#105;&#115;&#105;&#32;&#117;&#116;&#32;&#97;&#108;&#105;&#113;&#117;&#105;&#112;&#32;&#101;&#120;&#32;&#101;&#97;&#32;&#99;&#111;&#109;&#109;&#111;&#100;&#111;&#32;&#99;&#111;&#110;&#115;&#101;&#113;&#117;&#97;&#116;&period;&#32;&lt;&sol;&#104;&#51;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#98;&#117;&#116;&#116;&#111;&#110;&#51;&quot;&gt;&#65;&#68;&#68;&#32;&#84;&#79;&#32;&#67;&#65;&#82;&#84;&lt;&sol;&#97;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#98;&#114;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#115;&#97;&#109;&#112;&#108;&#101;&lowbar;&#105;&#109;&#103;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#105;&#109;&#103;&#32;&#115;&#114;&#99;&equals;&quot;&#105;&#109;&#103;&sol;&#115;&#97;&#109;&#112;&#108;&#101;&#105;&#109;&#103;&#49;&period;&#112;&#110;&#103;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#105;&#109;&#103;&#32;&#115;&#114;&#99;&equals;&quot;&#105;&#109;&#103;&sol;&#115;&#97;&#109;&#112;&#108;&#101;&#105;&#109;&#103;&#50;&period;&#112;&#110;&#103;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#105;&#109;&#103;&#32;&#115;&#114;&#99;&equals;&quot;&#105;&#109;&#103;&sol;&#115;&#97;&#109;&#112;&#108;&#101;&#105;&#109;&#103;&#51;&period;&#112;&#110;&#103;&quot;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+                            &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+                        </code>
+                        
+                    </div>
+
+                     <!--Order Summmary Module-->
+                    <div class="list">
+                        <h2>Order Summary Module</h2>
+                        <div class="order_summary">
+                            <div class="cart_container">
+                                <h1>Order Summary</h1>
+                                <div class="cart_item">
+
+                                    <img src="img/theperfectchair.png">
+                                    <div class="cart_item_desc">
+                                        <h5>The Perfect Chair</h5>
+                                        <h5><strong>$198</strong></h5>
+                                    </div>
+
+                                </div>
+                                <div class="cart_item">
+                                    <img src="img/theperfectchair.png">
+
+                                    <div class="cart_item_desc">
+                                        <h5>The Perfect Chair</h5>
+                                        <h5><strong>$198</strong></h5>
+                                    </div>
+
+                                    <div style="padding-top:20px;">
+                                        <h5>Subtotal <strong>$198</strong></h5>
+                                        <h5>Tax <strong>$10</strong></h5>
+                                        <h5>Shipping <strong>FREE</strong></h5>
+                                        <h5>Total <strong>$208</strong></h5>
+
+                                        <div class="order_summary_btns">
+                                             <a href="#" class="button_promo">ADD PROMO CODE</a>
+                                             <a href="#" class="button_checkout">PURCHASE</a>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Sample Code</h3>
+                            <code>
+                                &#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#99;&#97;&#114;&#116;&lowbar;&#99;&#111;&#110;&#116;&#97;&#105;&#110;&#101;&#114;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#49;&gt;&#79;&#114;&#100;&#101;&#114;&#32;&#83;&#117;&#109;&#109;&#97;&#114;&#121;&lt;&sol;&#104;&#49;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#99;&#97;&#114;&#116;&lowbar;&#105;&#116;&#101;&#109;&quot;&gt;
+
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#105;&#109;&#103;&#32;&#115;&#114;&#99;&equals;&quot;&#105;&#109;&#103;&sol;&#116;&#104;&#101;&#112;&#101;&#114;&#102;&#101;&#99;&#116;&#99;&#104;&#97;&#105;&#114;&period;&#112;&#110;&#103;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#99;&#97;&#114;&#116;&lowbar;&#105;&#116;&#101;&#109;&lowbar;&#100;&#101;&#115;&#99;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&#84;&#104;&#101;&#32;&#80;&#101;&#114;&#102;&#101;&#99;&#116;&#32;&#67;&#104;&#97;&#105;&#114;&lt;&sol;&#104;&#53;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&dollar;&#49;&#57;&#56;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#104;&#53;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#99;&#97;&#114;&#116;&lowbar;&#105;&#116;&#101;&#109;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#105;&#109;&#103;&#32;&#115;&#114;&#99;&equals;&quot;&#105;&#109;&#103;&sol;&#116;&#104;&#101;&#112;&#101;&#114;&#102;&#101;&#99;&#116;&#99;&#104;&#97;&#105;&#114;&period;&#112;&#110;&#103;&quot;&gt;
+
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#99;&#97;&#114;&#116;&lowbar;&#105;&#116;&#101;&#109;&lowbar;&#100;&#101;&#115;&#99;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&#84;&#104;&#101;&#32;&#80;&#101;&#114;&#102;&#101;&#99;&#116;&#32;&#67;&#104;&#97;&#105;&#114;&lt;&sol;&#104;&#53;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&dollar;&#49;&#57;&#56;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#104;&#53;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#115;&#116;&#121;&#108;&#101;&equals;&quot;&#112;&#97;&#100;&#100;&#105;&#110;&#103;&#45;&#116;&#111;&#112;&colon;&#50;&#48;&#112;&#120;&semi;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&#83;&#117;&#98;&#116;&#111;&#116;&#97;&#108;&#32;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&dollar;&#49;&#57;&#56;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#104;&#53;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&#84;&#97;&#120;&#32;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&dollar;&#49;&#48;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#104;&#53;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&#83;&#104;&#105;&#112;&#112;&#105;&#110;&#103;&#32;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&#70;&#82;&#69;&#69;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#104;&#53;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#104;&#53;&gt;&#84;&#111;&#116;&#97;&#108;&#32;&lt;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&dollar;&#50;&#48;&#56;&lt;&sol;&#115;&#116;&#114;&#111;&#110;&#103;&gt;&lt;&sol;&#104;&#53;&gt;
+
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#111;&#114;&#100;&#101;&#114;&lowbar;&#115;&#117;&#109;&#109;&#97;&#114;&#121;&lowbar;&#98;&#116;&#110;&#115;&quot;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#98;&#117;&#116;&#116;&#111;&#110;&lowbar;&#112;&#114;&#111;&#109;&#111;&quot;&gt;&#65;&#68;&#68;&#32;&#80;&#82;&#79;&#77;&#79;&#32;&#67;&#79;&#68;&#69;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&#97;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&num;&quot;&#32;&#99;&#108;&#97;&#115;&#115;&equals;&quot;&#98;&#117;&#116;&#116;&#111;&#110;&lowbar;&#99;&#104;&#101;&#99;&#107;&#111;&#117;&#116;&quot;&gt;&#80;&#85;&#82;&#67;&#72;&#65;&#83;&#69;&lt;&sol;&#97;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&sol;&#100;&#105;&#118;&gt;
+                            </code>
+                    </div>
+
+                     <!--Category Page Grids-->
+                    <div class="list">
+                        <h2>Grid Structure 1</h2>
+                        <h4>— Category Page Products Grids  
+                        
+                            <gridpoint>4 columns, 3 elements per row on desktop </gridpoint>
+                           <p>
+                            <!--Enable tag for mobile device-->
+                            <gridpointmobile>1 - 2 columns, 1 - 2 elements per row</gridpointmobile>
+                           </p>
+                        </h4>
+                        
+                        <div class="category_wrapper">
+                            <div class="cl1"><img src="img/chairlisting1.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    Bohemian Throne </br>
+                                    <b>$198</b>
+                                </div>
+                            </div>
+                            <div class="cl2"><img src="img/chairlisting2.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    Cascadia Desk Chair </br>
+                                    <b>$230</b>
+                                </div>
+                            </div>
+                            <div class="cl3"><img src="img/chairlisting3.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    80s Lounger </br>
+                                    <b>$210</b>
+                                </div>
+                            </div>
+                            <div class="cl4"><img src="img/chairlisting4.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    The Perfect Chair </br>
+                                    <b>$210</b>
+                                </div>
+                            </div>
+                            <div class="cl5"><img src="img/chairlisting5.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    Fiona Desk Chair </br>
+                                    <b>$350</b>
+                                </div>
+                            </div>
+                            <div class="cl6"><img src="img/chairlisting6.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    Anthropics Superseat </br>
+                                    <b>$210</b>
+                                </div>
+                            </div>
+                            <div class="cl7"><img src="img/chairlisting7.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    Anthropics Superseat </br>
+                                    <b>$210</b>
+                                </div>
+                            </div>
+                            <div class="cl8"><img src="img/chairlisting8.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    Anthropics Superseat </br>
+                                    <b>$210</b>
+                                </div>
+                            </div>
+                            <div class="cl9"><img src="img/chairlisting9.png" class="chairlisting_img">
+                                <div class="listing_description">
+                                    Anthropics Superseat </br>
+                                    <b>$210</b>
                                 </div>
                             </div>
                         </div>
 
+                        
                     </div>
-            </li>
-        </ul>
 
-    </section>
+                      <!--Stories Template Grid-->
+                        <div class="list">
+                        <h2 style="margin-top:2em;">Grid Structure 2</h2>
+                        <h4>— Stories Template
+                            <gridpoint>4 columns, 4 elements per row on desktop</gridpoint>
+                            <p>
+                            <gridpointmobile>2 columns, 1 - 2 elements per row</gridpointmobile>
+                            </p>
+                        </h4>
 
-    <a name="prototype"></a>
-    <section name="prototype">
-        <a
-            href="https://www.figma.com/proto/akUhguBEQjhjAT8EmK2Eiz/IAT-339?node-id=149%3A4516&viewport=524%2C915%2C0.024828437715768814&scaling=scale-down-width">View
-            Figma Prototype</a>
+                        <div class="stories_wrapper">
+                            <div class="stories">
+                                <img src="img/stories1.png" class="stories_img">
+                                <div class="listing_description">
+                                    Rachel
+                                </div>
+                            </div>
 
-    </section>
+                            <div class="stories">
+                                <img src="img/stories2.png" class="stories_img">
+                                <div class="listing_description">
+                                    Rachel
+                                </div>
+                            </div>
+
+                            <div class="stories">
+                                <img src="img/stories5.png" class="stories_img">
+                                <div class="listing_description">
+                                    Rachel
+                                </div>
+                            </div>
+
+                            <div class="stories">
+                                <img src="img/stories4.png" class="stories_img">
+                                <div class="listing_description">
+                                    Rachel
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Sets Template Grid-->
+                    <div class="list">
+                        <h2 style="margin-top:2em;">Grid Structure 3</h2>
+                        <h4>— Sets Template
+                            <gridpoint>2 columns, 2 elements per row on desktop</gridpoint>
+                            <p>
+                            <gridpointmobile>1 column, 1 elements per row</gridpointmobile>
+                            </p>
+                        </h4>
+                        <div class="set_wrapper">
+                            <div class="set_img1">
+                                <img src="img/images/set2.png" class="wrapper_img">
+                            </div>
+
+                            <div class="set_text1">
+                                <h2>the boho set</h2>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+                                <a href="#" class="button">VIEW</a>
+                            </div>
+
+                            <div class="set_img2">
+                                <img src="img/images/set1.png" class="wrapper_img">
+                            </div>
+
+                            <div class="set_text2">
+                                <h2>the boho set</h2>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+                                <a href="#" class="button">VIEW</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                   
+            </section>
+
+                <!--Prototype-->
+
+            <a name="prototype"></a>
+            <section name="prototype">
+                <a
+                    href="https://www.figma.com/proto/akUhguBEQjhjAT8EmK2Eiz/IAT-339?node-id=149%3A4516&viewport=524%2C915%2C0.024828437715768814&scaling=scale-down-width">View
+                    Figma Prototype</a>
+
+            </section>
+
+        </div>
+    </div>
+
+    <!--Javascript for Navbar-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav_module") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav_module";
+            }
+        }
+    </script>
 
 
 
 </body>
+
 
 </html>
