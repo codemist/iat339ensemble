@@ -768,3 +768,14 @@ h1 {
     float: left;
     width: 50px;
 }
+
+/************* PRODUCT REVIEW FORM *************/
+
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
