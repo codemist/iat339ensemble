@@ -122,6 +122,11 @@ h3 {
 
 /** HERO IMAGE**/
 
+section.hero{
+    margin-bottom:1rem;
+    position: relative;
+}
+
 .hero-image {
     width:100%;
     height:40em;
@@ -130,7 +135,52 @@ h3 {
     margin:0;
 }
 
+.hero-text{
+    color:white;
+    width:60%;
+    max-width:100rem;
+    margin-left:2rem;
+    margin-right:2rem;
+    padding:.5rem;
+
+    position: absolute;
+    bottom: 2rem;
+    padding: 5rem;
+}
+
+.hero-text a{
+    position: absolute;
+
+}
+
+.hero-text h2{
+    color:white;
+}
+
+.cta-main {
+    display:inline-block;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    padding-left:3rem;
+    padding-right:3rem;
+    color:black;
+    background:white;
+    text-decoration:none;
+
+}
+
+.intro {
+    color:black;
+    background: red;
+}
 /** Stories Wrapper **/
+
+.stories_wrapper {
+    margin-top:5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+}
 
 /***Four Column Grid****/
 
