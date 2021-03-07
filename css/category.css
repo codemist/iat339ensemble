@@ -78,6 +78,40 @@ section{
     grid-column-end: 5;
 }
 
+
+/* Media Query for Category Grid Mobile */
+
+@media screen and (max-width:800px) {
+    .category_wrapper {
+        display: grid;
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        row-gap: 6em;
+        column-gap: 1em;
+    }
+    /* New start-end column values for mobile */
+    .cl1, .cl5, .cl7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .cl2, .cl6 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .cl3, .cl4, .cl8 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .cl9 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
+
 /* Image class for category images */
 
 .chairlisting_img {
@@ -466,19 +500,31 @@ footer {
 
 .footer-div h3{
     color:white;
+    width:80%;
     font-weight:300;
     font-size:0.90em;
 }
 
+@media screen and (max-width:600px){
+    .footer-div h3{
+        width:100%;
+    }
+
+    .footer-container{
+        padding:3em;
+    }
+}
+
 input[type=email] {
     padding: 12px 30px;
-    width: 200px;
+    width: 30%;
     border: none;
     color:#ACACAC;
     background-color:#3D3D3D;
 }
 
 .form h3 {
+    padding-top:1em;
     text-transform: uppercase;
 }
 
@@ -486,6 +532,7 @@ input[type=email] {
     background-color:#B9B9B9;
     border: none;
     color: #202020;
+    width:20%;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
