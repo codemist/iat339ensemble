@@ -8,9 +8,12 @@
 }
 
 body {
-    font-family: 'Karla', sans-serif;
-    /**Main font family**/
-    margin: 50px 50px 50px 50px;
+    font-family: 'Karla', sans-serif; /**Main font family**/
+    margin:0;
+}
+
+section{
+    margin:1em;
 }
 
 
@@ -289,4 +292,96 @@ a {
         margin-right: 0;
         position: absolute;
     }
+}
+
+/***FOOTER****/
+
+footer {
+    background:#202020;
+    width:100%;
+}
+
+.footer-container {
+    display:grid;
+    padding:3em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-links-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-div h1{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2em;
+    color:white;
+    font-weight:normal;
+    margin:0 !important;
+}
+
+.footer-div h3{
+    color:white;
+    font-weight:300;
+    font-size:0.90em;
+}
+
+input[type=email] {
+    padding: 12px 30px;
+    width: 200px;
+    border: none;
+    color:#ACACAC;
+    background-color:#3D3D3D;
+}
+
+.form h3 {
+    text-transform: uppercase;
+}
+
+.submission {
+    background-color:#B9B9B9;
+    border: none;
+    color: #202020;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.footer-links {
+    font-size:0.83em;
+    padding-left:2em;
+}
+
+
+@media screen and (max-width:520px){
+    .footer-container{
+     grid-template-columns:1fr;
+     row-gap: 1em;
+    }
+
+    .footer-links {
+        padding-left:0;
+    }
+}
+
+.footer-links a{
+    color:white;
+    padding-bottom:0.5em;
+    font-weight:normal;
+    display:block;
+}
+
+.footer-links title {
+    text-transform:uppercase;
+    color:#575757;
+    padding-bottom:1em;
+    display:block;
+    font-weight:bold;
+}
+.footer-links a:hover {
+    color:var(--cto-color);
 }
