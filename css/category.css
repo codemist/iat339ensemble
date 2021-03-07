@@ -18,6 +18,91 @@ section{
 }
 
 
+/************* CATEGORY GRID *************/
+
+/* Wrapper for product category, 4 columns default for desktop */
+
+.category_wrapper {
+    margin-top:40em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 6em;
+    column-gap: 1em;
+    padding-bottom:3em;
+}
+
+/* Start-end column for each image */
+
+.cl1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.cl2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.cl3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.cl4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.cl5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.cl6 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.cl7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.cl8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.cl9 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+/* Image class for category images */
+
+.chairlisting_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.nonbold {
+    font-weight: normal;
+}
+
+#citations_body li {
+    padding-bottom: 1em;
+}
+
+/* Product Name and Price */
+
+.listing_description {
+    margin-top: 1em;
+    position: absolute;
+}
+
+
 /** Sets **/
 
 /************* SETS GRID *************/
