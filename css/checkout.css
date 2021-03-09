@@ -308,16 +308,33 @@ input[type=name] {
     background:var(--lightgray-color);
 }
 
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
 .order-summary {
     padding:2em;
 
 }
 
-.order-summary h4 {
-
-    display:inline;
-
+.order-listing-desc {
+    padding-left:1em;
 }
+
+.order-summary h1 {
+    font-weight:bold;
+    padding-bottom:1em;
+}
+
+.order-summary h4 {
+    display:inline;
+    font-size:1.2em;
+    font-weight:400;
+}
+
 .order-summary-listing{
     padding-bottom:1em;
 }
