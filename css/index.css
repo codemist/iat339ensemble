@@ -126,34 +126,70 @@ h3 {
 
 /** HERO IMAGE**/
 
-.hero{
-    margin-bottom:1rem;
-    position: relative;
+.hero-image {
+    position:absolute;
+    width:100%;
+    margin-top:-10em;
+    overflow:none;
+    z-index:0;
 }
 
-.hero-image {
+.padding-top{
+    height:25vh;
+}
+
+/**HERO**/
+.img-spread {
     width:100%;
-    height:40em;
-    background:#616161;
-    position:absolute;
-    margin:0;
+    height:90vh;
+    object-fit:cover;
+    overflow:none;
+}
+
+.smaller{
+    width:10em;
 }
 
 .hero-text{
     color:white;
-    width:30%;
-    max-width:100rem;
-    margin-left:2rem;
-    margin-right:2rem;
-    padding:.5rem;
-    position: absolute;
-    margin-top:6em;
-    z-index:999999999999;
-    padding: 5rem;
+    z-index:99999999999999999999;
+    padding-left:10vw;
+    position:absolute;
+    margin-top:-20em;
 }
 
-.hero-text a{
-    position: absolute;
+.mid-sec{
+    margin-top:20em;
+    color:Black;
+    padding-left:2em;
+    padding-right:2em;
+    text-align:center;
+}
+
+.mid-sec h4{
+    font-weight:300;
+
+}
+
+@media screen and (max-width:800px){
+    .hero-text{
+    text-align:center;
+    padding-right:1em;
+    padding-left:1em;
+    }
+
+    
+.padding-top{
+    height:40vh;
+}
+}
+
+
+@media screen and (min-width:800px){
+   .img-spread{
+       height:80vh;
+}
+
 }
 
 .hero-text h4{
@@ -198,8 +234,16 @@ h3 {
 
 /***Four Column Grid****/
 
+
+@media screen and (min-width:800px){
+.body-container {
+    padding-left:10vw;
+    padding-right:10vw;
+}
+}
+
 .four_column_wrapper {
-    margin-top:20em;
+    margin-top:1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1em;
@@ -219,7 +263,7 @@ h3 {
 
 .stories_img {
     width: 100%;
-    height: 35em;
+    height: auto;
     object-fit: cover;
 }
 
@@ -246,6 +290,8 @@ a {
 
 /* Brand title */
 
+
+
 .nav_module .title {
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 2em;
@@ -257,19 +303,17 @@ a {
     transform: translate(-50%, -50%);
 }
 
-/* Main nav container */
 .nav_module {
     padding: 20px 30px 25px 30px;
     overflow: hidden;
     position: relative;
-    
 }
 
 /* Nav Links */
 .nav_module a {
     float: left;
     text-align: center;
-    color:#eeeeee;
+    color:#fff;
     padding-right: 20px;
     font-weight: normal;
     text-transform: uppercase;
