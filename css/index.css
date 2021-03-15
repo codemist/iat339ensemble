@@ -74,7 +74,12 @@ section{
 
 h3 {
     font-size: 1em;
-    font-weight: bold;
+    font-weight:400;
+    margin-top:0.5em;
+}
+
+h2 {
+    margin:0;
 }
 
 .set_wrapper h3 {
@@ -159,8 +164,8 @@ h3 {
 }
 
 .mid-sec{
-    margin-top:20em;
-    color:Black;
+    margin-top:25em;
+    color:Black; 
     padding-left:2em;
     padding-right:2em;
     text-align:center;
@@ -178,6 +183,9 @@ h3 {
     padding-left:1em;
     }
 
+    .mid-sec{
+        margin-top:17em;
+    }
     
 .padding-top{
     height:40vh;
@@ -187,7 +195,7 @@ h3 {
 
 @media screen and (min-width:800px){
    .img-spread{
-       height:80vh;
+       height:90vh;
 }
 
 }
@@ -220,16 +228,26 @@ h3 {
 /** Stories Wrapper **/
 
 .stories_wrapper {
-    margin-top:5em;
+    margin-top:2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1em;
 }
 
-
 .article_img {
     width: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width:800px){
+    
+.stories_wrapper {
+    margin-top:2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+
 }
 
 /***Four Column Grid****/
@@ -237,13 +255,13 @@ h3 {
 
 @media screen and (min-width:800px){
 .body-container {
-    padding-left:10vw;
-    padding-right:10vw;
+    padding-left:5vw;
+    padding-right:5vw;
 }
 }
 
 .four_column_wrapper {
-    margin-top:1em;
+    margin-top:2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1em;

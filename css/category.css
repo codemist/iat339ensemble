@@ -23,12 +23,25 @@ section{
 /* Wrapper for product category, 4 columns default for desktop */
 
 .category_wrapper {
-    margin-top:40em;
+    margin-top:35em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 6em;
     column-gap: 1em;
     padding-bottom:3em;
+}
+
+@media screen and (max-width:800px){
+    
+.category_wrapper {
+    margin-top:25em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 6em;
+    column-gap: 1em;
+    padding-bottom:3em;
+}
+
 }
 
 /* Start-end column for each image */
@@ -259,21 +272,14 @@ h3 {
 }
 
 .hero-text{
-    color:white;
-    width:30%;
-    max-width:100rem;
-    margin-left:2rem;
-    margin-right:2rem;
-    padding:.5rem;
-    position: absolute;
-    margin-top:6em;
-    z-index:999999999999;
-    padding: 5rem;
+    color:black;
+    z-index:99999999999999999999;
+    padding-left:10vw;
+    position:absolute;
+    margin-top:-20em;
 }
 
-.hero-text a{
-    position: absolute;
-}
+
 
 .hero-text h4{
     font-weight:200;
@@ -388,7 +394,7 @@ a {
 .nav_module a {
     float: left;
     text-align: center;
-    color:#eeeeee;
+    color:black !important;
     padding-right: 20px;
     font-weight: normal;
     text-transform: uppercase;
