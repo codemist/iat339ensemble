@@ -23,26 +23,22 @@ section{
 /* Wrapper for product category, 4 columns default for desktop */
 
 .category_wrapper {
-    margin-top:35em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 6em;
-    column-gap: 1em;
+    row-gap:6em;
     padding-bottom:3em;
+    column-gap:1em;
 }
 
-@media screen and (max-width:800px){
-    
-.category_wrapper {
-    margin-top:25em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 6em;
-    column-gap: 1em;
-    padding-bottom:3em;
+.category_wrapper a {
+    color:black;
+    font-weight:normal;
 }
 
+.category_wrapper a:hover img{
+    filter: brightness(80%);
 }
+
 
 /* Start-end column for each image */
 
@@ -97,8 +93,6 @@ section{
 @media screen and (max-width:800px) {
     .category_wrapper {
         display: grid;
-        padding-left: 20px;
-        padding-right: 20px;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: auto;
         row-gap: 6em;
@@ -163,10 +157,21 @@ section{
     grid-gap: 1em;
     padding-top: 5em;
 }
+.padding-top{
+    margin-top:60vh;
+}
 
+
+
+h3 {
+    font-weight:400 !important;
+}
 /* Media Query for sets */
 
 @media screen and (max-width:800px) {
+    .padding-top {
+        margin-top:45vh;
+    }
     .set_wrapper {
         display: grid;
         grid-template-columns: 1fr;

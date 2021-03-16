@@ -261,6 +261,12 @@ input[type=email] {
     text-transform:uppercase;
 }
 
+@media screen and (max-width:800px){
+    .checkout-container {
+        grid-template-columns:1fr;
+    }
+}
+
 h1 {
     text-transform:lowercase;
     font-size:2em;
