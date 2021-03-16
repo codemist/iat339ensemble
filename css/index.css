@@ -1,5 +1,5 @@
-
 /**Color Variables**/
+
 :root {
     --cto-color: #5BAF80;
     /**Call to Action**/
@@ -8,15 +8,15 @@
 }
 
 body {
-    font-family: 'Karla', sans-serif; /**Main font family**/
-    margin:0;
+    font-family: 'Karla', sans-serif;
+    /**Main font family**/
+    margin: 0;
 }
 
-section{
-    margin:1em;
-    padding-bottom:3em;
+section {
+    margin: 1em;
+    padding-bottom: 3em;
 }
-
 
 /** Sets **/
 
@@ -74,12 +74,12 @@ section{
 
 h3 {
     font-size: 1em;
-    font-weight:400;
-    margin-top:0.5em;
+    font-weight: 400;
+    margin-top: 0.5em;
 }
 
 h2 {
-    margin:0;
+    margin: 0;
 }
 
 .set_wrapper h3 {
@@ -128,107 +128,109 @@ h2 {
     grid-row-end: 3;
 }
 
-
 /** HERO IMAGE**/
 
 .hero-image {
-    position:absolute;
-    width:100%;
-    margin-top:-10em;
-    overflow:none;
-    z-index:0;
+    position: absolute;
+    width: 100%;
+    margin-top: -10em;
+    overflow: none;
+    z-index: 0;
 }
 
-.padding-top{
-    height:25vh;
+.padding-top {
+    height: 25vh;
 }
 
 /**HERO**/
+
 .img-spread {
-    width:100%;
-    height:90vh;
-    object-fit:cover;
-    overflow:none;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    overflow: none;
 }
 
-.smaller{
-    width:10em;
+.smaller {
+    width: 10em;
 }
 
-.hero-text{
-    color:white;
-    z-index:99999999999999999999;
-    padding-left:10vw;
-    position:absolute;
-    margin-top:-20em;
+.hero-text {
+    color: white;
+    z-index: 99999999999999999999;
+    padding-left: 10vw;
+    position: absolute;
+    margin-top: -20em;
 }
 
-.mid-sec{
-    margin-top:25em;
-    color:Black; 
-    padding-left:2em;
-    padding-right:2em;
-    text-align:center;
+.mid-sec {
+    margin-top: 25em;
+    color: Black;
+    padding-left: 10em;
+    padding-right: 10em;
+    text-align: center;
 }
 
-.mid-sec h4{
-    font-weight:300;
-
+.mid-sec h4 {
+    font-weight: 300;
 }
 
-@media screen and (max-width:800px){
-    .hero-text{
-    text-align:center;
-    padding-right:1em;
-    padding-left:1em;
+@media screen and (max-width:800px) {
+    .mid-sec {
+        margin-top: 25em;
+        color: Black;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
     }
-
-    .mid-sec{
-        margin-top:17em;
+    .hero-text {
+        text-align: center;
+        padding-right: 1em;
+        padding-left: 1em;
     }
-    
-.padding-top{
-    height:40vh;
-}
-}
-
-
-@media screen and (min-width:800px){
-   .img-spread{
-       height:90vh;
+    .mid-sec {
+        margin-top: 17em;
+    }
+    .padding-top {
+        height: 40vh;
+    }
 }
 
+@media screen and (min-width:800px) {
+    .img-spread {
+        height: 90vh;
+    }
 }
 
-.hero-text h4{
-    font-weight:200;
-    line-height:130%;
+.hero-text h4 {
+    font-weight: 200;
+    line-height: 130%;
 }
 
-.hero-text h2{
-    color:white;
+.hero-text h2 {
+    color: white;
 }
 
 .cta-main {
-    display:inline-block;
-    padding-top:0.3rem;
-    padding-bottom:0.3rem;
-    padding-left:3rem;
-    padding-right:3rem;
-    color:black;
-    background:white;
-    text-decoration:none;
-
+    display: inline-block;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: black;
+    background: white;
+    text-decoration: none;
 }
 
 .intro {
-    color:black;
+    color: black;
     background: red;
 }
+
 /** Stories Wrapper **/
 
 .stories_wrapper {
-    margin-top:2em;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1em;
@@ -239,29 +241,26 @@ h2 {
     object-fit: cover;
 }
 
-@media screen and (max-width:800px){
-    
-.stories_wrapper {
-    margin-top:2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
-}
-
+@media screen and (max-width:800px) {
+    .stories_wrapper {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
 }
 
 /***Four Column Grid****/
 
-
-@media screen and (min-width:800px){
-.body-container {
-    padding-left:5vw;
-    padding-right:5vw;
-}
+@media screen and (min-width:800px) {
+    .body-container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 }
 
 .four_column_wrapper {
-    margin-top:2em;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1em;
@@ -276,7 +275,6 @@ h2 {
     }
 }
 
-
 /* Image class for stories */
 
 .stories_img {
@@ -290,8 +288,8 @@ h2 {
     position: absolute;
 }
 
-.stories h4{
-    font-weight:normal;
+.stories h4 {
+    font-weight: normal;
 }
 
 /**Links**/
@@ -307,8 +305,6 @@ a {
 /*Tutorial: https://www.w3schools.com/howto/howto_js_topnav.asp*/
 
 /* Brand title */
-
-
 
 .nav_module .title {
     font-family: 'Sorts Mill Goudy', serif;
@@ -328,10 +324,11 @@ a {
 }
 
 /* Nav Links */
+
 .nav_module a {
     float: left;
     text-align: center;
-    color:#fff;
+    color: #fff;
     padding-right: 20px;
     font-weight: normal;
     text-transform: uppercase;
@@ -339,6 +336,7 @@ a {
 }
 
 /* Nav Hover effect */
+
 .nav_module a:hover {
     color: gray;
 }
@@ -418,41 +416,41 @@ a {
 /***FOOTER****/
 
 footer {
-    background:#202020;
-    width:100%;
+    background: #202020;
+    width: 100%;
 }
 
 .footer-container {
-    display:grid;
-    padding:5em;
+    display: grid;
+    padding: 5em;
     grid-template-columns: 1fr 1fr;
 }
 
-.footer-div h1{
+.footer-div h1 {
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 2em;
-    color:white;
-    font-weight:normal;
-    margin:0 !important;
+    color: white;
+    font-weight: normal;
+    margin: 0 !important;
 }
 
-.footer-div:nth-child(2){
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+.footer-div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer-div h3{
-    color:white;
-    font-weight:300;
-    font-size:0.90em;
+.footer-div h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 0.90em;
 }
 
 input[type=email] {
     padding: 12px 30px;
     width: 200px;
     border: none;
-    color:#ACACAC;
-    background-color:#3D3D3D;
+    color: #ACACAC;
+    background-color: #3D3D3D;
 }
 
 .form h3 {
@@ -460,7 +458,7 @@ input[type=email] {
 }
 
 .submission {
-    background-color:#B9B9B9;
+    background-color: #B9B9B9;
     border: none;
     color: #202020;
     padding: 10px 32px;
@@ -473,36 +471,35 @@ input[type=email] {
 }
 
 .footer-links {
-    font-size:0.83em;
-    padding-left:2em;
+    font-size: 0.83em;
+    padding-left: 2em;
 }
 
-
-@media screen and (max-width:520px){
-    .footer-container{
-     grid-template-columns:1fr;
-     row-gap: 1em;
+@media screen and (max-width:520px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
     }
-
     .footer-links {
-        padding-left:0;
+        padding-left: 0;
     }
 }
 
-.footer-links a{
-    color:white;
-    padding-bottom:0.5em;
-    font-weight:normal;
-    display:block;
+.footer-links a {
+    color: white;
+    padding-bottom: 0.5em;
+    font-weight: normal;
+    display: block;
 }
 
 .footer-links title {
-    text-transform:uppercase;
-    color:#575757;
-    padding-bottom:1em;
-    display:block;
-    font-weight:bold;
+    text-transform: uppercase;
+    color: #575757;
+    padding-bottom: 1em;
+    display: block;
+    font-weight: bold;
 }
+
 .footer-links a:hover {
-    color:var(--cto-color);
+    color: var(--cto-color);
 }

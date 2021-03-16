@@ -280,6 +280,15 @@ input[type=email] {
         /* Shrink to 1 column */
         grid-template-rows: auto;
     }
+
+    .set_text2 {
+        grid-row-start: 4;
+        text-align:left!important;
+    }
+
+    .set_img2 {
+        grid-row-start: 3;
+    }
     
 }
 
