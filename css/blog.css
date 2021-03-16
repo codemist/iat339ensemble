@@ -250,6 +250,12 @@ input[type=email] {
     color:var(--cto-color);
 }
 
+.blog_title {
+
+padding-left: 3.3em;
+
+}
+
 h1{
     text-transform:lowercase;
     font-size:2em;
@@ -269,7 +275,7 @@ h3{
     grid-row-end: 2;
 }
 
-.education h4{
+h4{
     font-size:2em;
     font-weight:400;
 
@@ -280,9 +286,37 @@ h3{
 }
 
 .education_img{
-    width: 40%;
+    width: 80%;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding-right: 0em;
+}
+
+.education_text{
+    padding-top: 10em;
+}
+
+.blog_education{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    grid-gap: 2em;
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-bottom: 5em;
+
+}
+
+/* Media Query for sets */
+
+@media screen and (max-width:800px) {
+    .blog_education {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Shrink to 1 column */
+        grid-template-rows: auto;
+    }
+    
 }
