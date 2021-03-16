@@ -18,6 +18,7 @@ section {
     padding-bottom: 3em;
 }
 
+
   
 .button {
     background-color: #6EB78E;
@@ -178,6 +179,17 @@ h2 {
     padding-left: 10vw;
     position: absolute;
     margin-top: -20em;
+}
+
+
+.four_column_wrapper a:hover img{
+    filter: brightness(80%);
+}
+
+
+.four_column_wrapper a{
+    color:black;
+    font-weight:normal;
 }
 
 .mid-sec {

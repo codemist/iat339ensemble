@@ -71,12 +71,18 @@
 }
 
 
+.nav_module a{
+    color:black !important;
+}
+
 .button-placement {
     padding-top:2em;
 }
 
 .review-item {
     padding-top:1em;
+    border-bottom:1px solid var(--lightgray-color);
+    padding-bottom:1em;
 }
 
 .ratings {
@@ -98,4 +104,27 @@
 .stars {
     margin-left:1em;
     display:inline;
+}
+
+/*images inthe center */
+.image-center-page {
+    padding-top:3em;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+
+.img-center {
+    width:100%;
+}
+
+.mid-sec {
+    margin-top:3em!important;
+}
+
+@media screen and (max-width:800px){
+    body {
+        margin:1em;
+    }
+    
 }
