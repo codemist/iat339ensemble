@@ -276,9 +276,9 @@ h3{
 }
 
 h4{
-    font-size:2em;
+    font-size:2.5em;
     font-weight:400;
-
+    margin:0;
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -286,7 +286,7 @@ h4{
 }
 
 .education_img{
-    width: 80%;
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -295,11 +295,12 @@ h4{
 }
 
 .education_text{
-    padding-top: 10em;
+
 }
 
 .blog_education{
     display: grid;
+    width: 70%;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1em;
     grid-gap: 2em;
