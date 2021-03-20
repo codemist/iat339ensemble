@@ -1,0 +1,17 @@
+
+
+.nav_module a {
+    float: left;
+    text-align: center;
+    color: black !important;;
+    padding-right: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.thankyou-container {
+    padding:3em;
+    text-align:center;
+    background: #f2f2f2;
+}
