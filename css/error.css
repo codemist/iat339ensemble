@@ -1,0 +1,16 @@
+.nav_module a {
+    float: left;
+    text-align: center;
+    color: black !important;;
+    padding-right: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.error-container {
+    padding:8em 3em 8em 3em; /* top, right, bottom, and left*/
+    margin:6em 3em 6em 3em;
+    text-align:center;
+    background: #f2f2f2;
+}
