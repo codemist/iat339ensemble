@@ -293,12 +293,51 @@ h2 {
     column-gap: 1em;
 }
 
+/**Three Column Grid**/
+.testimonial_wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:1em;
+}
+
+.testimonial_description {
+    padding-top:1em;
+}
+
+.testimonial_description .user {
+    position:absolute;
+    margin-top:-3em;
+    margin-left:4em;
+}
+
+.testimonial_description .user h4 {
+    font-weight:400;
+    margin:0;
+}
+
+
+.testimonial_description .user h2 {
+    font-size:1.2em;
+}
+
+.testimonial_description img {
+    width:3em;
+}
+
+
+
 @media screen and (max-width:800px) {
     /* Shrink stories wrapper into 2 columns */
     .four_column_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 6em;
+    }
+
+    .testimonial_wrapper {
+        grid-template-columns: 1fr 1fr;
+        row-gap:1em;
+
     }
 }
 
