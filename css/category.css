@@ -442,120 +442,14 @@ a {
     color: var(--cto-color);
 }
 
-/*************NAV BAR*************/
 
-/*Tutorial: https://www.w3schools.com/howto/howto_js_topnav.asp*/
 
-/* Brand title */
-
-.nav_module .title {
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 2em;
-    text-transform: lowercase;
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.nav_module a{
+    color:black !important;
 }
 
-/* Main nav container */
 
-.nav_module {
-    padding: 20px 30px 25px 30px;
-    overflow: hidden;
-    position: relative;
-}
 
-/* Nav Links */
-
-.nav_module a {
-    float: left;
-    text-align: center;
-    color: black !important;
-    padding-right: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.8em;
-}
-
-/* Nav Hover effect */
-
-.nav_module a:hover {
-    color: gray;
-}
-
-/* Float nav links to the right */
-
-.right_float {
-    float: right;
-}
-
-/* Font Awesome Hamburger Icon */
-
-.nav_module .icon {
-    display: none;
-}
-
-/* Media Query for Nav Module */
-
-@media screen and (max-width: 1000px) {
-    .nav_module a:not(.title) {
-        opacity: 0;
-    }
-    /* Hamburger Icon Visible */
-    .nav_module a.icon {
-        opacity: 1;
-        right: 0;
-        font-size: 1.5em;
-        position: absolute;
-        margin-top: -0.2em;
-        display: block;
-    }
-    /* Links collapse down */
-    .nav_module.responsive {
-        position: relative;
-        padding-top: 2em;
-        padding-bottom: 0.5em;
-    }
-    /* Make Mobile ver links Visible */
-    .nav_module.responsive a {
-        opacity: 1;
-    }
-    /* Align right floating links to the left */
-    .nav_module.responsive .right_float {
-        float: left;
-    }
-    /* Hide Title */
-    .nav_module.responsive .title {
-        display: none;
-    }
-    /* Make active link bold */
-    .nav_module.responsive .active {
-        font-weight: 900;
-    }
-    /* Adjust hamburger icon placement */
-    .nav_module.responsive .icon {
-        position: absolute;
-        margin-top: -7.3em;
-    }
-    /* Links for mobile nav composition */
-    .nav_module.responsive a {
-        float: none;
-        padding-bottom: 2em;
-        display: block;
-        text-align: left;
-    }
-    /* Title for mobile */
-    .nav_module .title {
-        font-family: 'Sorts Mill Goudy', serif;
-        font-size: 2em;
-        text-transform: lowercase;
-        float: right;
-        margin-right: 0;
-        position: absolute;
-    }
-}
 
 /***FOOTER****/
 
