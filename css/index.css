@@ -22,7 +22,7 @@ section {
     background-color: #6EB78E;
     border: none;
     color: white;
-    padding: 10px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -179,6 +179,20 @@ h2 {
     width: 10em;
 }
 
+
+.hero-text .featured {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    font-size: 0.7em;
+    margin-top: -1em;
+    background:rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+
 .hero-text {
     color: white;
     font-weight:2em;
@@ -187,7 +201,6 @@ h2 {
     position: absolute;
     margin-top: -20em;
 }
-
 
 .four_column_wrapper a{
     color:black;
@@ -215,8 +228,21 @@ h2 {
 
 
 .mid-sec h4 {
-    font-weight: 300;
+    font-weight:300;
+    line-height:150%;
 }
+
+
+.hero-text h4 {
+    font-weight: 200;
+    width: 50%;
+    line-height:150%;
+    padding-bottom:1em;
+    margin-top:-1em;
+    text-transform:none;
+
+}
+
 
 @media screen and (max-width:800px) {
     .mid-sec {
@@ -227,19 +253,14 @@ h2 {
         text-align: center;
     }
     .hero-text {
-        text-align: center;
+        text-align: left;
         padding-top:2em;
         padding-right: 1em;
         padding-left: 1em;
     }
-    /* .mid-sec {
-        margin-top: 17em;
-    } */
-}
-
-.hero-text h4 {
-    font-weight: 200;
-    line-height: 130%;
+    .hero-text h4 {
+        width:100%;
+    }
 }
 
 .hero-text h1 {
