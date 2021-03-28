@@ -149,6 +149,23 @@ a {
     }
 }
 
+/* effects on buttons */
+.button {
+    background-color: #6EB78E;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--lightgray-color);
+    color: black;
+}
+
 /***FOOTER****/
 
 footer {
