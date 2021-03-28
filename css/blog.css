@@ -149,23 +149,6 @@ a {
     }
 }
 
-/* effects on buttons */
-.button {
-    background-color: #6EB78E;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: var(--lightgray-color);
-    color: black;
-}
-
 /***FOOTER****/
 
 footer {
@@ -268,15 +251,14 @@ input[type=email] {
 }
 
 .blog_title {
-
-padding-left: 3.3em;
+    padding-left: 3.3em;
 
 }
 
 h1{
     text-transform:lowercase;
     font-size:2em;
-    font-weight:500;
+    font-weight:400;
 }
 
 h3{
@@ -293,7 +275,7 @@ h3{
 }
 
 h4{
-    font-size:2.5em;
+    font-size:1.5em;
     font-weight:400;
     margin:0;
     grid-column-start: 5;
@@ -312,7 +294,7 @@ h4{
 }
 
 .education_text{
-
+    width: 50%;
 }
 
 .blog_education{
@@ -325,6 +307,23 @@ h4{
     padding-left: 3em;
     padding-bottom: 5em;
 
+}
+
+/* effects on buttons */
+.button {
+    background-color: #6EB78E;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--lightgray-color);
+    color: black;
 }
 
 /* Media Query for sets */
