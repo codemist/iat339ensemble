@@ -7,6 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/blog.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,31 +25,46 @@
 
 <body>
 
-
-    <!--NAVBAR-->
-  <!--NAVBAR-->
-    <div class="nav_module" id="myTopnav">
-        <a href="#" class="active">shop</a>
-        <a href="category.html">on sale</a>
-        <a href="blog.html">blog</a>
-        <a href="stories.html">stories</a>
-        <div class="right_float">
-            <a href="#">user</a>
-            <a href="checkout.html">cart <strong>(3)</strong></a>
+   <!--NAVBAR-->
+   <div class="nav_module" id="myTopnav">
+    <div class="dropdown">
+        <div class="dropbtn">
+            <a href="#">shop </a>
+            <i class="fa fa-caret-down"></i>
         </div>
-        <!--Javascript for Collapsing Links-->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a class="title" href="index.html">ensemble</a>
+        <div class="dropdown-content">
+            <a href="category.html">chairs</a>
+            <a href="category.html">tables</a>
+            <a href="category.html">storage</a>
+            <a href="category.html">accessories</a>
+        </div>
     </div>
+    <div class="display-on-mobile">
+        <a href="category.html">chairs</a>
+        <a href="category.html">tables</a>
+        <a href="category.html">storage</a>
+        <a href="category.html">accessories</a>
+    </div>
+    <a href="category.html">on sale</a>
+    <a href="blog.html">blog</a>
+    <a href="stories.html">stories</a>
+    <div class="right_float">
+        <a href="#">user</a>
+        <a href="checkout.html">cart <strong>(3)</strong></a>
+    </div>
+    <!--Javascript for Collapsing Links-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a class="title" href="index.html">ensemble</a>
+</div>
 
-
+<div class="body-container">
     <section>
         <div class="blog_title">
 
-        <h1>Emsemble blog</h1>
-            <h3>We’ve been featured in </h3>
+        <h1>Ensemble blog</h1>
+        <h3>We’ve been featured in </h3>
 
         </div>
         <div class="blog_education">
@@ -58,7 +74,7 @@
 
             <div class="education_text1">
                 <div class="education_text">
-                <h3>JANUARY 20,2021</h3>
+                <h3>JANUARY 20, 2021</h3>
                 <h4>
                     How to make your office the Perfect productivity space
                 </h4>
@@ -73,7 +89,7 @@
 
             <div class="education_text2">
                 <div class="education_text">
-                <h3>JANUARY 20,2021</h3>
+                <h3>MARCH 20, 2021</h3>
                 <h4>
                     Ergonomics: Why do they matter?
                 </h4>
@@ -88,7 +104,7 @@
 
             <div class="education_text3">
                 <div class="education_text">
-                <h3>JANUARY 20,2021</h3>
+                <h3>FEB 20, 2021</h3>
                 <h4>
                     Are standing desks the future of remote work?
                 </h4>
@@ -103,7 +119,7 @@
 
             <div class="education_text4">
                 <div class="education_text">
-                <h3>JANUARY 20,2021</h3>
+                <h3>MAY 20, 2021</h3>
                 <h4>
                     Tired of the home office? Why co-working may be for you
                 </h4>
@@ -113,6 +129,8 @@
             </div>
         </div>
     </section>
+
+</div>
 
     <footer>
         <div class="footer-container">

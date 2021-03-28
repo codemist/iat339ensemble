@@ -36,57 +36,19 @@ a {
     color: var(--cto-color);
 }
 
-/*************NAV BAR*************/
 
-/*Tutorial: https://www.w3schools.com/howto/howto_js_topnav.asp*/
-
-/* Brand title */
-
-.nav_module .title {
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 2em;
-    text-transform: lowercase;
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*Override NAV module properties*/
+.nav_module a{
+    color:black !important;
 }
 
-/* Main nav container */
-.nav_module {
-    padding: 20px 30px 25px 30px;
-    overflow: hidden;
-    position: relative;
-    
+
+.nav_module .dropdown .fa {
+    color:black !important;
+  
 }
-
-/* Nav Links */
-.nav_module a {
-    float: left;
-    text-align: center;
-    color:black;
-    padding-right: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.8em;
-}
-
-/* Nav Hover effect */
-.nav_module a:hover {
-    color: gray;
-}
-
-/* Float nav links to the right */
-
-.right_float {
-    float: right;
-}
-
-/* Font Awesome Hamburger Icon */
-
-.nav_module .icon {
-    display: none;
+.nav_module .dropdown-content{
+    background:rgba(255, 255, 255, 0.678);
 }
 
 /* Media Query for Nav Module */
@@ -251,8 +213,13 @@ input[type=email] {
 }
 
 .blog_title {
-    padding-left: 3.3em;
+    padding-top:3em;
+}
 
+.blog_title h1 {
+    margin:0;
+    padding-bottom:0.1em;
+    
 }
 
 h1{
@@ -265,14 +232,13 @@ h3{
     font-size:1em;
     font-weight:300;
 }
-
+/* 
 .education h3{
-    padding-top: 10em;
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 2;
-}
+} */
 
 h4{
     font-size:1.5em;
@@ -290,23 +256,41 @@ h4{
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-    padding-right: 0em;
+
 }
 
 .education_text{
-    width: 50%;
+    width: 80%;
+}
+
+.education_text h3 {
+    margin:0;
+    padding-bottom:0.5em;
 }
 
 .blog_education{
     display: grid;
-    width: 70%;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1em;
     grid-gap: 2em;
-    padding-top: 5em;
-    padding-left: 3em;
+    padding-top: 2em;
     padding-bottom: 5em;
 
+}
+
+
+@media screen and (max-width:800px) {
+    .blog_education {
+        width:70%;
+    }
+    
+}
+
+
+@media screen and (max-width:600px){
+    .blog_education {
+        width:100%;
+    }
 }
 
 /* effects on buttons */
@@ -321,6 +305,7 @@ h4{
     cursor: pointer;
 }
 
+
 .button:hover {
     background-color: var(--lightgray-color);
     color: black;
@@ -334,6 +319,12 @@ h4{
         grid-template-columns: 1fr;
         /* Shrink to 1 column */
         grid-template-rows: auto;
+        grid-gap:0.5em;
     }
+
+    .education_img1, .education_img2, .education_img3, .education_img4 {
+        margin-top:3em;
+    }
+    
     
 }

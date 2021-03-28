@@ -39,7 +39,7 @@ section {
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
-    transform: scale(1);
+  
     
 }
 
@@ -54,7 +54,6 @@ section {
 } 
 
 .category_wrapper img:hover {
-   /* filter: brightness(80%);  */
     transform: scale(1.1);
     object-fit:cover;
 
@@ -67,6 +66,7 @@ section {
     grid-column-start: 1;
     grid-column-end: 2;
     height:100%;
+    cursor:pointer;
 
 }
 
@@ -74,52 +74,74 @@ section {
     overflow:hidden;
     grid-column-start: 2;
     grid-column-end: 3;
+    height:100%;
+
+   
 }
 
 .cl3 {
     overflow:hidden;
     grid-column-start: 3;
     grid-column-end: 5;
+    cursor:pointer;
+    height:100%;
+
 }
 
 .cl4 {
     overflow:hidden;
     grid-column-start: 1;
     grid-column-end: 3;
+    cursor:pointer;
+    height:100%;
+
 }
 
 .cl5 {
     overflow:hidden;
     grid-column-start: 3;
     grid-column-end: 4;
+    height:100%;
 }
 
 .cl6 {
     overflow:hidden;
     grid-column-start: 4;
     grid-column-end: 5;
+    height:100%;
+
+
 }
 
 .cl7 {
     overflow:hidden;
     grid-column-start: 1;
     grid-column-end: 2;
+    height:100%;
+
 }
 
 .cl8 {
     overflow:hidden;
     grid-column-start: 2;
     grid-column-end: 4;
+    cursor:pointer;
+    height:100%;
+
 }
 
 .cl9 {
     overflow:hidden;
     grid-column-start: 4;
     grid-column-end: 5;
+    height:100%;
+
 }
 
 .c20,.c21,.c22,.c23 {
     overflow:hidden;
+    height:100%;
+
 }
 
 
@@ -444,13 +466,16 @@ a {
 }
 
 
-
+/*Override NAV module properties*/
 .nav_module a{
     color:black !important;
 }
 
 
-
+.nav_module .dropdown .fa {
+    color:black !important;
+  
+}
 
 /***FOOTER****/
 

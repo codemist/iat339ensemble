@@ -7,6 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/stories.css">
 
     <!--Script-->
@@ -29,16 +30,32 @@
 
 <body>
 
-
     <!--NAVBAR-->
     <div class="nav_module" id="myTopnav">
-        <a href="#" class="active">shop</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <a href="#">shop </a>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="category.html">chairs</a>
+                <a href="category.html">tables</a>
+                <a href="category.html">storage</a>
+                <a href="category.html">accessories</a>
+            </div>
+        </div>
+        <div class="display-on-mobile">
+            <a href="category.html">chairs</a>
+            <a href="category.html">tables</a>
+            <a href="category.html">storage</a>
+            <a href="category.html">accessories</a>
+        </div>
         <a href="category.html">on sale</a>
         <a href="blog.html">blog</a>
-        <a href="#">stories</a>
+        <a href="stories.html">stories</a>
         <div class="right_float">
             <a href="#">user</a>
-            <a href="#">cart <strong>(3)</strong></a>
+            <a href="checkout.html">cart <strong>(3)</strong></a>
         </div>
         <!--Javascript for Collapsing Links-->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -49,31 +66,17 @@
 
 
 
-<section class = "intro">
+<div class="body-container">
+        <div class="paragraph">
 
-    <div class = "paragraph">
+            <h1> <strong> We care about giving you an unparalleled experience </strong> </h1>
 
-<h1> <strong> We care about giving you an unparalleled experience </strong> </h1>
+            <p> We stand by the quality our products and we back that up with our thousands of positive reviews and
+                stories about how customers just like you are using ensemble products to improve their office
+                experiences. Our user stories and instagram feed keep members of our ensemble family connected. . </p>
+        </div>
 
-
-    <p> We stand by the quality our products and we back that up with our thousands of positive reviews and stories about how customers just like you are using ensemble products to improve their office experiences. Our user stories and instagram feed keep members of our ensemble family connected. . </p>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<section>
+        <section>
             <h2>Testimonials</h2>
             <h3>Explore what people think about us</h3>
             <div class="testimonial_wrapper">
@@ -112,61 +115,44 @@
 
             </div>
         </section>
+     
+    <section>
+        <div class="instatext">
+            <h1> Stay connected with us on Instagram </h1>
+            <h4>Tag us with #ensemble to get featured on our instagram
+            </h4>
+        </div>
+
+        <main>
+            <div class="item-a">
+                <img src="img/grid8.png">
+            </div>
+            <div>
+                <img src="img/grid2.png">
+            </div>
+            <div class="item-b">
+                <img src="img/grid3.png">
+            </div>
+            <div>
+                <img src="img/grid4.png">
+            </div>
+            <div class="item-c">
+                <img src="img/grid5.png">
+            </div>
+            <div>
+                <img src="img/grid6.png">
+            </div>
+            <div>
+                <img src="img/grid7.png">
+            </div>
+            <div class="item-d">
+                <img src="img/grid9.png">
+            </div>
+        </main>
 
 
-
-<div class="instatext">
-<p>  Stay connected with us on Instagram  </p>
-</div>
-
-<div class="instatext2">
-
-<p> Tag us with #ensemble to get featured on our instagram </p>
-</div>
-
-<main>
-  <div class="item-a">
-    <img src="img/grid8.png">
-  </div>
-  <div>
-    <img src="img/grid2.png">
-  </div>
-  <div class="item-b">
-    <img src="img/grid3.png">
-  </div>
-  <div>
-    <img src="img/grid4.png">
-  </div>
-  <div class="item-c">
-    <img src="img/grid5.png">
-  </div>
-  <div>
-    <img src="img/grid6.png">
-  </div>
-  <div>
-    <img src="img/grid7.png">
-  </div>
-  <div class="item-d">
-    <img src="img/grid9.png">
-  </div>
-</main>
-
-
-
-
-
-
-
-
-
-</section>
-
-
-
-
-
-
-
+    </section>
+    </div>
 
 
 
@@ -177,12 +163,13 @@
                 <h1>ensemble</h1>
 
                 <h3>
-                    Love to be the first to know about our newly released furniture straight to your inbox? Us too! Sign up for our newsletter here!
+                    Love to be the first to know about our newly released furniture straight to your inbox? Us too! Sign
+                    up for our newsletter here!
                 </h3>
 
                 <p>
                 <form class="form">
-                    
+
                     <input type="email" class="form" placeholder="YOUR EMAIL" />
                     <a href="#" class="submission">SUBSCRIBE</a>
                 </form>

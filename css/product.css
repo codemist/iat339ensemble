@@ -111,13 +111,15 @@
  
 }
 
+/*Override NAV module properties*/
 .nav_module a{
     color:black !important;
 }
 
 
-.nav_module {
-    padding-top:1em;
+.nav_module .dropdown .fa {
+    color:black !important;
+  
 }
 
 
