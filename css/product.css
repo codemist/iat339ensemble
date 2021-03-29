@@ -8,10 +8,11 @@
     padding-bottom:1em;
     padding-top:2em;
     grid-template-columns: 1fr 1fr;
+    line-height:1.5em;
 }
 
 .product_module h3 {
-    font-weight: normal;
+    font-weight: 300;
 }
 
 /***Product Description***/
@@ -50,13 +51,13 @@
     background:#E3F3EA;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.12em;
     font-size: 0.7em;
     color:#375F48;
     text-align:center;
     border-radius:40em;
    
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.2em 1.1em 0.2em 1.1em;
 
 }
 
@@ -141,7 +142,7 @@
 }
 
 .review-item h4 {
-    font-weight:400;
+    font-weight:300;
     margin:0;
     padding-top:0.5em;
 }
