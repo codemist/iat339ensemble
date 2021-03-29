@@ -26,21 +26,38 @@
 
 
  <!--NAVBAR-->
-    <div class="nav_module" id="myTopnav">
-        <a href="#" class="active">shop</a>
-        <a href="category.html">on sale</a>
-        <a href="blog.html">blog</a>
-        <a href="stories.html">stories</a>
-        <div class="right_float">
-            <a href="#">user</a>
-            <a href="checkout.html">cart <strong>(3)</strong></a>
+ <div class="nav_module" id="myTopnav">
+    <div class="dropdown">
+        <div class="dropbtn">
+            <a href="#">shop </a>
+            <i class="fa fa-caret-down"></i>
         </div>
-        <!--Javascript for Collapsing Links-->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a class="title" href="index.html">ensemble</a>
+        <div class="dropdown-content">
+            <a href="category.html">chairs</a>
+            <a href="category.html">tables</a>
+            <a href="category.html">storage</a>
+            <a href="category.html">accessories</a>
+        </div>
     </div>
+    <div class="display-on-mobile">
+        <a href="category.html">chairs</a>
+        <a href="category.html">tables</a>
+        <a href="category.html">storage</a>
+        <a href="category.html">accessories</a>
+    </div>
+    <a href="category.html">on sale</a>
+    <a href="blog.html">blog</a>
+    <a href="stories.html">stories</a>
+    <div class="right_float">
+        <a href="#">user</a>
+        <a href="checkout.html">cart <strong>(3)</strong></a>
+    </div>
+    <!--Javascript for Collapsing Links-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a class="title" href="index.html">ensemble</a>
+</div>
 
 
   <div class="body-container">
@@ -199,7 +216,7 @@
 
         <section>
             
-    <section>
+   
         <h2>Browse more</h2>
         <h3>We think you’ll love</h3>
 
@@ -246,8 +263,7 @@
 
         </div>
 
-    </section>
-
+   
         </section>
     </div>
 

@@ -3,7 +3,10 @@
 
 .product_module {
     display: grid;
-    width:100%;
+    padding-right:1em;
+    padding-left:1em;
+    padding-bottom:1em;
+    padding-top:2em;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -154,6 +157,7 @@
     display:inline;
 }
 
+
 /*images inthe center */
 .image-center-page {
     padding-top:3em;
@@ -170,10 +174,9 @@
     margin-top:3em!important;
 }
 
-@media screen and (max-width:800px){
-    body {
-        margin:1em;
-    } 
-
+ @media screen and (max-width:800px){
+    .product_module {
+        padding-top:3em;
+    }
     
-}
+} 
