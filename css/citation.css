@@ -1,0 +1,18 @@
+
+/*Override NAV module properties*/
+
+.nav_module a {
+    color: black !important;
+}
+
+.nav_module .dropdown .fa {
+    color: black !important;
+}
+
+.nav_module .dropdown-content {
+    background: rgba(255, 255, 255, 0.678);
+}
+
+.body-container {
+    line-height:1.5em;
+}

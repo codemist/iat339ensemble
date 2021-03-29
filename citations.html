@@ -6,15 +6,13 @@
         <meta charset="utf-8">
     
         <!--CSS-->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/citation.css">
+
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-
-
-
 
     
     </head>
@@ -23,16 +21,46 @@
 
 
     <body>
+
+          <!--NAVBAR-->
+   <div class="nav_module" id="myTopnav">
+    <div class="dropdown">
+        <div class="dropbtn">
+            <a href="#">shop </a>
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="dropdown-content">
+            <a href="category.html">chairs</a>
+            <a href="category.html">tables</a>
+            <a href="category.html">storage</a>
+            <a href="category.html">accessories</a>
+        </div>
+    </div>
+    <div class="display-on-mobile">
+        <a href="category.html">chairs</a>
+        <a href="category.html">tables</a>
+        <a href="category.html">storage</a>
+        <a href="category.html">accessories</a>
+    </div>
+    <a href="category.html">on sale</a>
+    <a href="blog.html">blog</a>
+    <a href="stories.html">stories</a>
+    <div class="right_float">
+        <a href="#">user</a>
+        <a href="checkout.html">cart <strong>(3)</strong></a>
+    </div>
+    <!--Javascript for Collapsing Links-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a class="title" href="index.html">ensemble</a>
+</div>
     
+    <div class="body-container">
     <section id="anchor_links">
-    <h1>Citations</h1>
-    <h3>Links:
-        <ul>
-            <li> <a href="index.html">Back to Styleguide</a></li>
-            
-        </ul>
-    </h3>
-    </section>
+    <h1 style="padding-top:3em;">Citations</h1>
+   
+
 
     <section id="citations_body">
 
@@ -56,6 +84,9 @@
             <li><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grids</a></li>
             <li><a href="https://css-tricks.com/left-align-and-right-align-text-on-the-same-line/">Left Align and Right Align Text on the Same Line
             </a></li>
+            <li><a href="https://designmodo.com/shopping-cart-ui/?opanda_confirm=1&opanda_lead=15011&opanda_code=a6f8b69c49460b98c5f62cd90ece9e94#download-the-shopping-cart-ui">Desiging a Cart with HTML/CSS/Javascript</a>
+                
+            </li>
         </ul>
 
         <h1>Tools</h1>
@@ -75,11 +106,57 @@
 
     </section>
 
+</div>
    
+<footer>
+    <div class="footer-container">
+        <div class="footer-div">
+            <h1>ensemble</h1>
+
+            <h3>
+                Love to be the first to know about our newly released furniture straight to your inbox? Us too! Sign up for our newsletter here!
+            </h3>
+
+            <p>
+            <form class="form">
+                
+                <input type="email" class="form" placeholder="YOUR EMAIL" />
+                <a href="#" class="submission">SUBSCRIBE</a>
+            </form>
+            </p>
+        </div>
+
+        <div class="footer-div">
+            <div class="footer-links">
+                <title>ENSEMBLE</title>
+                <a href="about_us.html">About Us</a>
+                <a href="styleguide.html">Style Guide</a>
+                <a href="sitemap_and_mockup.html">Wireframes</a>
+                <a href="citations.html">Citations</a>
+                <a href="https://github.com/codemist/iat339ensemble">Github</a>
+            </div>
+
+            <div class="footer-links">
+                <title>HELP</title>
+                <a href="contact.html">Contact</a>
+                <a href="error.html">Gift Card</a>
+                <a href="error.html">Returns & Exchange</a>
+                <a href="error.html">FAQ</a>
+            </div>
+
+            <div class="footer-links">
+                <title>COMMUNITY</title>
+                <a href="stories.html">Stories</a>
+                <a href="error.html">Newletter</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
 
    
-
-
 
     
     </body>
