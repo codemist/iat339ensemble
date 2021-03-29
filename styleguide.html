@@ -188,13 +188,30 @@
                     <!--Navigation Module tutorial from https://www.w3schools.com/howto/howto_js_topnav.asp-->
                     <h2>Main Navigation Module</h2>
                     <div class="nav_module" id="myTopnav">
-                        <a href="#" class="active">shop</a>
+                        <div class="dropdown">
+                            <div class="dropbtn">
+                                <a href="#">shop </a>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="category.html">chairs</a>
+                                <a href="category.html">tables</a>
+                                <a href="category.html">storage</a>
+                                <a href="category.html">accessories</a>
+                            </div>
+                        </div>
+                    <div class="display-on-mobile">
+                        <a href="category.html">chairs</a>
+                        <a href="category.html">tables</a>
+                        <a href="category.html">storage</a>
+                        <a href="category.html">accessories</a>
+                    </div>
                         <a href="#">on sale</a>
                         <a href="#">blog</a>
                         <a href="#">stories</a>
                         <div class="right_float">
                             <a href="#">user</a>
-                            <a href="#">cart <strong>(3)</strong></a>
+                            <a href="checkout.html">cart <strong>(3)</strong></a>
                         </div>
                         <!--Javascript for Collapsing Links-->
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -230,23 +247,80 @@
                     <h2>UI of Single Product</h2>
                     <div class="product_module">
                         <div class="product_img">
-                            <img src="img/theperfectchair.png">
+                            <img src="img/elm-management-chair-main.png">
+            </div>
+            <div class="desc">
+                <h2>Elm Management Chair</h2>
+                <h3><strong>$410</strong></h3>
+                <div class="keywords">
+                    <h3 class="keyword-item">Comfortable</h3>
+                    <h3 class="keyword-item">Adjustable</h3>
+                    <h3 class="keyword-item">Ergonomic</h3>
+                </div>
+
+                <h3>Inferior chairs use burlap fabric where the cotton flattens when you sit on it. Elm’s frame is made from matte _(not steel). Using BIFMA-rated Class 4 lifts that are the most durable in the industry, ensuring a lifetime of trouble-free raising and lowering. The aluminum base is the strongest base on the market — supporting over 400 lbs with a beautiful chrome-plated finish. </h3>
+                <div class="button-placement">
+                <a href="checkout.html" class="button">ADD TO CART</a>
+                </div>
+                <br><br>
+                <div class="sample_img">
+                    <img src="img/elm-management-chair-front.png">
+                    <img src="img/elm-management-chair-side.png">
+                    <img src="img/elm-management-chair-back.png">
+                </div>
+
+                <div class="review-wrapper">
+                    <div class="review-header"><strong>80 REVIEWS</strong> (4.5/5)</div>
+                    <div class="review-item">
+                        <h3>Great Value</h3>
+                        <div class="ratings">
+                            5.0
+                            <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                         </div>
-                        <div class="desc">
-                            <h2>the perfect chair</h2>
-                            <h3><strong>$193</strong></h3>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                            <a href="#" class="button3">ADD TO CART</a>
-                            </br>
-                            <div class="sample_img">
-                                <img src="img/sampleimg1.png">
-                                <img src="img/sampleimg2.png">
-                                <img src="img/sampleimg3.png">
-                            </div>
+                        </div>
+                        <h4>
+                            I never write reviews for anything, but I am so impressed by the quality of this chair that I had to. Sitting in this chair I would have thought it cost at least twice what it actually does. The seat material feels very high quality as well. It looks fantastic and is also comfortable. Overall, the chair feels like it was made the right way without cutting corners. Assembly was simple and shipping was fast.
+                        </h4>
+                    </div>
+
+                    <div class="review-item">
+                        <h3>Best chair I’ve own</h3>
+                        <div class="ratings">
+                            5.0
+                            <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                        </div>
+
+            </div>
+        </div>
+
+        <section>
+            <div class="image-center-page">
+                <img src="img/images/product_img_context1.png" class="img-center">
+                <img src="img/images/product_img_context2.png" class="img-center">
+            </div>
+        </section>
+
+        <section>
+            <div class="mid-sec">
+                <h1>
+                   You won’t find a better chair
+                </h1>
+                <h4>For years, the Elm series management chair has been the top choice for mid century modern office chairs. Made in Italy, from the highest quality materials, our chairs support over 400lbs, and have the durable searing surface that last.</h4>
+            </div>
+        </section>
+
                         </div>
                     </div>
                     <h3 style="padding-top:1em;">Sample Code</h3>
@@ -326,7 +400,7 @@
 
                 <!--Product Review Form-->
                 
-                <h2>Product Review Form</h2>
+                <!--<h2>Product Review Form</h2>
                     <div class="product_review">
                      <h4>Leave a Review</h4>
 
@@ -369,7 +443,7 @@
                 &lt;/textarea&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row"&gt;</code></p>
                 <p><code>&lt;a href="#" class="button"&gt;SUBMIT&lt;/a&gt;&lt;/div&gt;&lt;span class="heading"&gt;Product Rating&lt;/span&gt;&lt;span class="fa fa-star checked"&gt;&lt;/span&gt;</code></p>
                 <p><code>&lt;span class="fa fa-star checked"&gt;&lt;/span&gt;&lt;span class="fa fa-star checked"&gt;&lt;/span&gt;&lt;span class="fa fa-star checked"&gt;&lt;/span&gt;</code></p>
-                <p><code>&lt;span class="fa fa-star"&gt;&lt;/span&gt;&lt;p&gt;4.4 based on 300 reviews.&lt;/p&gt;&lt;/form&gt;&lt;/div&gt;</code></p>
+                <p><code>&lt;span class="fa fa-star"&gt;&lt;/span&gt;&lt;p&gt;4.4 based on 300 reviews.&lt;/p&gt;&lt;/form&gt;&lt;/div&gt;</code></p> -->
 
               
                 <!--Category Page Grids-->

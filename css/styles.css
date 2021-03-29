@@ -79,6 +79,49 @@ code {
     width: 100%;
 }
 
+/*Dropdown tutorial from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+.dropdown .fa {
+    color:white;
+    position:absolute;
+    margin-left:-0.8em;
+}
+.dropdown-content {
+    padding-top:1.8em;
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+      color:white;
+    background-color: rgba(32, 32, 32, 0.479);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .display-on-mobile {
+      display:none;
+  }
+
 /***Media Queries for Main Page, shrink into 1 column****/
 
 @media screen and (max-width:900px) {
@@ -86,6 +129,172 @@ code {
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+
+/***PRODUCT MODULE***/
+
+.product_module {
+    display: grid;
+    width:100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product_module h3 {
+    font-weight: normal;
+}
+
+/***Product Description***/
+
+.product_module .desc {
+    padding-top: 10em;
+    float: right;
+    margin-left: 3em;
+}
+
+
+/***Image class for Product Module (main product) ***/
+
+.product_img {
+     position:sticky; 
+     align-self: start; 
+    top:5em;
+ 
+}
+.product_img img {
+    float:center;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.keywords {
+    display:grid;
+    width:60%;
+    column-gap:0.6em;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom:0em;
+}
+
+.keywords .keyword-item {
+    background:#E3F3EA;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    font-size: 0.7em;
+    color:#375F48;
+    text-align:center;
+    border-radius:40em;
+   
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+
+
+/***Media Query for Product Module***/
+
+@media screen and (max-width: 800px) {
+    .product_module {
+        display: grid;
+        grid-template-columns: 1fr; 
+        margin:0;
+        /***Make 1 Column***/
+    }
+    .product_module .desc {
+        padding-top: 2em;
+        margin-left: 0em;
+        /* float: right; */
+    }
+   
+    .product_img {
+        position:relative;
+        top:0;
+    
+    }
+
+}
+
+/***Image class for Product Module (small images)***/
+
+.sample_img {
+    display: inline;
+}
+
+.sample_img img {
+    width: 50px;
+    padding-top: 0em;
+    padding-right: 10px;
+}
+
+.product_module h5 {
+    font-weight: normal;
+}
+
+.review-wrapper {
+    padding-top:2em;
+  
+}
+
+.review-header {
+    background:var(--lightgray-color);
+    text-transform:uppercase;
+    font-size:0.8em;
+    padding:1em;
+ 
+}
+
+/*Override NAV module properties*/
+.nav_module a{
+    color:black !important;
+}
+
+
+.nav_module .dropdown .fa {
+    color:black !important;
+  
+}
+
+
+.button-placement {
+    padding-top:2em;
+}
+
+.review-item {
+    padding-top:2em;
+    border-bottom:1px solid var(--lightgray-color);
+    padding-bottom:2em;
+}
+
+.ratings {
+    display:inline;
+}
+
+.review-item h4 {
+    font-weight:400;
+    margin:0;
+    padding-top:0.5em;
+}
+
+.review-item h3 {
+    font-weight:bold;
+    margin:0;
+    padding-bottom:0.5em;
+}
+
+.stars {
+    margin-left:1em;
+    display:inline;
+}
+
+/*images inthe center */
+.image-center-page {
+    padding-top:3em;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+
+.img-center {
+    width:100%;
 }
 
 /* Default grid description when mobile */
