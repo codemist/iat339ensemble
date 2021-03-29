@@ -9,7 +9,7 @@
 body {
     font-family: 'Karla', sans-serif;
     /**Main font family**/
-    margin: 50px 50px 50px 50px;
+    margin:0;
 }
 
 
@@ -72,6 +72,10 @@ code {
     display: grid;
     grid-template-columns: 1fr 4fr;
     column-gap: 30px;
+    padding-left:5vw;
+    padding-bottom:3em;
+    margin-top:3em;
+    padding-right:8vw;
     overflow: hidden;
 }
 /***Main Page column****/
@@ -242,15 +246,171 @@ code {
  
 }
 
-/*Override NAV module properties*/
-.nav_module a{
-    color:black !important;
+/*Tutorial: https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+/* Brand title */
+
+.nav_module .title {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2em;
+    text-transform: lowercase;
+    float: none;
+    position: absolute;
+    padding-top:0.1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.nav_module {
+    background:rgb(245, 245, 245);
+    /* padding: 30px 30px 25px 30px; */
+    padding:30px;
+    padding-bottom:50px;
+    position: relative;
+}
 
-.nav_module .dropdown .fa {
-    color:black !important;
+/* Nav Links */
+
+.nav_module a {
+    float: left;
+    text-align: center;
+    color: black !important;
+    padding-left:1em;
+    padding-right:1.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+/* Nav Hover effect */
+
+.nav_module a:hover {
+    color: gray;
+}
+
+/* Float nav links to the right */
+
+.right_float {
+    float: right;
+}
+
+/* Font Awesome Hamburger Icon */
+
+.nav_module .icon {
+    display: none;
+}
+
+/*Dropdown tutorial from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+.dropdown .fa {
+    color:black;
+    position:absolute;
+    margin-left:-0.8em;
+}
+.dropdown-content {
+    background:rgba(255, 255, 255, 0.678);
+    padding-top:1.8em;
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
   
+  .dropdown-content a:hover {
+      color:gray;
+    background-color: rgba(32, 32, 32, 0.479);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .display-on-mobile {
+      display:none;
+  }
+/* Media Query for Nav Module */
+
+@media screen and (max-width: 1000px) {
+    .nav_module a:not(.title) {
+        opacity: 0;
+    }
+
+    .dropdown {
+        display:none;
+    }
+
+    .display-on-mobile {
+        display:block;
+    }
+
+    /* Hamburger Icon Visible */
+    .nav_module a.icon {
+        opacity: 1;
+        right: 0;
+        font-size: 1.5em;
+        position: absolute;
+        margin-top: -0.2em;
+        display: block;
+    }
+    /* Links collapse down */
+    .nav_module.responsive {
+        position: relative;
+        padding-top: 2em;
+        padding-bottom: 0.5em;
+    }
+    /* Make Mobile ver links Visible */
+    .nav_module.responsive a {
+        opacity: 1;
+    }
+    /* Align right floating links to the left */
+    .nav_module.responsive .right_float {
+        float: left;
+    }
+    /* Hide Title */
+    .nav_module.responsive .title {
+        display: none;
+    }
+    /* Make active link bold */
+    .nav_module.responsive .active {
+        font-weight: 900;
+    }
+    /* Adjust hamburger icon placement */
+    .nav_module.responsive .icon {
+        position: absolute;
+        margin-top: -12em;
+    }
+    /* Links for mobile nav composition */
+    .nav_module.responsive a {
+        float: none;
+        padding-bottom: 2em;
+        display: block;
+        text-align: left;
+    }
+    /* Title for mobile */
+    .nav_module .title {
+        font-family: 'Sorts Mill Goudy', serif;
+        font-size: 2em;
+        text-transform: lowercase;
+        float: right;
+        margin-right: 0;
+        position: absolute;
+    }
 }
 
 
@@ -584,122 +744,6 @@ h3 {
     }
 }
 
-/*************NAV BAR*************/
-
-/*Tutorial: https://www.w3schools.com/howto/howto_js_topnav.asp*/
-
-/* Brand title */
-
-.nav_module .title {
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 2em;
-    text-transform: lowercase;
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Main nav container */
-
-.nav_module {
-    background: var(--lightgray-color);
-    padding: 20px 30px 25px 30px;
-    overflow: hidden;
-    position: relative;
-}
-
-/* Nav Links */
-
-.nav_module a {
-    float: left;
-    text-align: center;
-    color: black;
-    padding-right: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.8em;
-}
-
-/* 
- Hover effect */
-
-.nav_module a:hover {
-    color: gray;
-}
-
-/* Float nav links to the right */
-
-.right_float {
-    float: right;
-}
-
-/* Font Awesome Hamburger Icon */
-
-.nav_module .icon {
-    display: none;
-}
-
-/* Media Query for Nav Module */
-
-@media screen and (max-width: 1000px) {
-    .nav_module a:not(.title) {
-        opacity: 0;
-    }
-    /* Hamburger Icon Visible */
-    .nav_module a.icon {
-        opacity: 1;
-        right: 0;
-        font-size: 1.5em;
-        position: absolute;
-        margin-top: -0.2em;
-        display: block;
-    }
-    /* Links collapse down */
-    .nav_module.responsive {
-        position: relative;
-        padding-top: 2em;
-        padding-bottom: 0.5em;
-    }
-    /* Make Mobile ver links Visible */
-    .nav_module.responsive a {
-        opacity: 1;
-    }
-    /* Align right floating links to the left */
-    .nav_module.responsive .right_float {
-        float: left;
-    }
-    /* Hide Title */
-    .nav_module.responsive .title {
-        display: none;
-    }
-    /* Make active link bold */
-    .nav_module.responsive .active {
-        font-weight: 900;
-    }
-    /* Adjust hamburger icon placement */
-    .nav_module.responsive .icon {
-        position: absolute;
-        margin-top: -7.3em;
-    }
-    /* Links for mobile nav composition */
-    .nav_module.responsive a {
-        float: none;
-        padding-bottom: 2em;
-        display: block;
-        text-align: left;
-    }
-    /* Title for mobile */
-    .nav_module .title {
-        font-family: 'Sorts Mill Goudy', serif;
-        font-size: 2em;
-        text-transform: lowercase;
-        float: right;
-        margin-right: 0;
-        position: absolute;
-    }
-}
 
 /***BUTTONS****/
 
@@ -990,4 +1034,97 @@ h1 {
 
 .checked {
   color: orange;
+}
+
+/*footer*/
+
+/***FOOTER****/
+
+footer {
+    background: #202020;
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    padding: 5em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-div h1 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2em;
+    color: white;
+    font-weight: normal;
+    margin: 0 !important;
+}
+
+.footer-div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-div h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 0.90em;
+}
+
+input[type=email] {
+    padding: 12px 30px;
+    width: 200px;
+    border: none;
+    color: #ACACAC;
+    background-color: #3D3D3D;
+}
+
+.form h3 {
+    text-transform: uppercase;
+}
+
+.submission {
+    background-color: #B9B9B9;
+    border: none;
+    color: #202020;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.footer-links {
+    font-size: 0.83em;
+    padding-left: 2em;
+}
+
+@media screen and (max-width:520px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+    }
+    .footer-links {
+        padding-left: 0;
+    }
+}
+
+.footer-links a {
+    color: white;
+    padding-bottom: 0.5em;
+    font-weight: normal;
+    display: block;
+}
+
+.footer-links title {
+    text-transform: uppercase;
+    color: #575757;
+    padding-bottom: 1em;
+    display: block;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: var(--cto-color);
 }

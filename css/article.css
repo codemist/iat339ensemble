@@ -6,195 +6,109 @@
 }
 
 body {
-    font-family: 'Karla', sans-serif; /**Main font family**/
-    margin:0;
-}
-
-section{
-    margin:2.5em;
-    padding-bottom:3em;
-}
-
-.cta-main {
-    display:inline-block;
-    padding-top:0.3rem;
-    padding-bottom:0.3rem;
-    padding-left:3rem;
-    padding-right:3rem;
-    color:black;
-    background:white;
-    text-decoration:none;
-
+    font-family: 'Karla', sans-serif;
+    /**Main font family**/
+    margin: 0;
 }
 
 
-/**Links**/
-
-a {
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--cto-color);
+/*featured product*/
+.feature-product-wrapper{
+    margin-top:2em;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background:var(--lightgray-color);
+    width:400px;
+    font-size:1.1em;
 }
 
-/*************NAV BAR*************/
-
-/*Tutorial: https://www.w3schools.com/howto/howto_js_topnav.asp*/
-
-/* Brand title */
-
-.nav_module .title {
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 2em;
-    text-transform: lowercase;
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.feature-product-wrapper img{
+    width:200px;
+    padding:1em;
 }
 
-/* Main nav container */
-.nav_module {
-    padding: 20px 30px 25px 30px;
-    overflow: hidden;
-    position: relative;
-    
+.featured-product-name {
+   padding-top:5em;
+   padding-right:1em;
 }
-.sayl_img  {
 
-
-width: 20%;
-
-
+@media screen and (max-width:600px){
+    .feature-product-wrapper{
+        display:grid;
+        grid-template-columns: 1fr;
+        background:var(--lightgray-color);
+        width:14em;
+        font-size:1.1em;
+    }
+  
+    .featured-product-name {
+        padding-top:0.1em;
+        padding-left:1em;
+        padding-right:1em;
+        padding-bottom:2em;
+      
+    }
 }
-/* Nav Links */
+
+
+section {
+    padding-bottom: 3em;
+}
+
+/*Override NAV module properties*/
+
 .nav_module a {
-    float: left;
-    text-align: center;
-    color:black;
-    padding-right: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.8em;
+    color: black !important;
 }
 
-/* Nav Hover effect */
-.nav_module a:hover {
-    color: gray;
+.nav_module .dropdown .fa {
+    color: black !important;
 }
 
-/* Float nav links to the right */
-
-.right_float {
-    float: right;
+.nav_module .dropdown-content {
+    background: rgba(255, 255, 255, 0.678);
 }
 
-/* Font Awesome Hamburger Icon */
-
-.nav_module .icon {
-    display: none;
-}
-
-/* Media Query for Nav Module */
-
-@media screen and (max-width: 1000px) {
-    .nav_module a:not(.title) {
-        opacity: 0;
-    }
-    /* Hamburger Icon Visible */
-    .nav_module a.icon {
-        opacity: 1;
-        right: 0;
-        font-size: 1.5em;
-        position: absolute;
-        margin-top: -0.2em;
-        display: block;
-    }
-    /* Links collapse down */
-    .nav_module.responsive {
-        position: relative;
-        padding-top: 2em;
-        padding-bottom: 0.5em;
-    }
-    /* Make Mobile ver links Visible */
-    .nav_module.responsive a {
-        opacity: 1;
-    }
-    /* Align right floating links to the left */
-    .nav_module.responsive .right_float {
-        float: left;
-    }
-    /* Hide Title */
-    .nav_module.responsive .title {
-        display: none;
-    }
-    /* Make active link bold */
-    .nav_module.responsive .active {
-        font-weight: 900;
-    }
-    /* Adjust hamburger icon placement */
-    .nav_module.responsive .icon {
-        position: absolute;
-        margin-top: -7.3em;
-    }
-    /* Links for mobile nav composition */
-    .nav_module.responsive a {
-        float: none;
-        padding-bottom: 2em;
-        display: block;
-        text-align: left;
-    }
-    /* Title for mobile */
-    .nav_module .title {
-        font-family: 'Sorts Mill Goudy', serif;
-        font-size: 2em;
-        text-transform: lowercase;
-        float: right;
-        margin-right: 0;
-        position: absolute;
-    }
-}
 
 /***FOOTER****/
 
 footer {
-    background:#202020;
-    width:100%;
+    background: #202020;
+    width: 100%;
 }
 
 .footer-container {
-    display:grid;
-    padding:5em;
+    display: grid;
+    padding: 5em;
     grid-template-columns: 1fr 1fr;
 }
 
-.footer-div h1{
+.footer-div h1 {
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 2em;
-    color:white;
-    font-weight:normal;
-    margin:0 !important;
+    color: white;
+    font-weight: normal;
+    margin: 0 !important;
 }
 
-.footer-div:nth-child(2){
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+.footer-div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer-div h3{
-    color:white;
-    width:80%;
-    font-weight:300;
-    font-size:0.90em;
+.footer-div h3 {
+    color: white;
+    width: 80%;
+    font-weight: 300;
+    font-size: 0.90em;
 }
 
-@media screen and (max-width:600px){
-    .footer-div h3{
-        width:100%;
+@media screen and (max-width:600px) {
+    .footer-div h3 {
+        width: 100%;
     }
-
-    .footer-container{
-        padding:3em;
+    .footer-container {
+        padding: 3em;
     }
 }
 
@@ -202,16 +116,15 @@ input[type=email] {
     padding: 12px 30px;
     width: 30%;
     border: none;
-    color:#ACACAC;
-    background-color:#3D3D3D;
+    color: #ACACAC;
+    background-color: #3D3D3D;
 }
 
-
 .submission {
-    background-color:#B9B9B9;
+    background-color: #B9B9B9;
     border: none;
     color: #202020;
-    width:20%;
+    width: 20%;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -222,91 +135,93 @@ input[type=email] {
 }
 
 .footer-links {
-    font-size:0.83em;
-    padding-left:2em;
+    font-size: 0.83em;
+    padding-left: 2em;
 }
 
-
-@media screen and (max-width:520px){
-    .footer-container{
-     grid-template-columns:1fr;
-     row-gap: 1em;
+@media screen and (max-width:520px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
     }
-
     .footer-links {
-        padding-left:0;
+        padding-left: 0;
     }
 }
 
-
-
-.footer-links a{
-    color:white;
-    padding-bottom:0.5em;
-    font-weight:normal;
-    display:block;
+.footer-links a {
+    color: white;
+    padding-bottom: 0.5em;
+    font-weight: normal;
+    display: block;
 }
 
 .backButton {
-
-font-size: 1.5em;
-color: black;
-
+    font-size: 1.5em;
+    color: black;
 }
 
-.article_author{
 
-font-size: 2em;
-
+.article_text {
+    margin-left: 0px;
+    font-size: 1.2em;
+    /* font-family: 'Sorts Mill Goudy', serif; */
+    padding-top:1.5em;
+    line-height:1.5em;
 }
 
-.article_text{
 
-margin-left: 0px;
-
-font-size: 1em;
-
+h4 {
+    font-weight:normal;
+    margin:0;
+    margin-top:2em;
 }
+
+h1 {
+    font-size:2em;
+    margin:0;
+    margin-top:0.5em;
+}
+
 .author_txt {
-font-size: 1em;
-
-margin-left: 80px;
+    font-size: 1em;
+    margin:0;
 }
 
+.author_txt p{
+  margin-top:0.5em;
+}
 
 .author_img {
-
     float: left;
-
+    width:30px;
     margin-bottom: 300px;
 }
 
 .footer-links title {
-    text-transform:uppercase;
-    color:#575757;
-    padding-bottom:1em;
-    display:block;
-    font-weight:bold;
+    text-transform: uppercase;
+    color: #575757;
+    padding-bottom: 1em;
+    display: block;
+    font-weight: bold;
 }
+
 .footer-links a:hover {
-    color:var(--cto-color);
+    color: var(--cto-color);
 }
 
-.intro{
-    text-align:center;
-    padding:10% 20% 3% 20%; /*top, right, bottom, left https://www.w3.org/Style/Examples/007/center.en.html*/
-
+.intro {
+    text-align: center;
+    padding: 10% 20% 3% 20%;
+    /*top, right, bottom, left https://www.w3.org/Style/Examples/007/center.en.html*/
 }
 
 .article_img {
-
-margin-top: 2em;
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-display: block;
-
-
+    margin-top: 2em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /** Sets **/

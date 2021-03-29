@@ -69,6 +69,7 @@ section {
     .set_wrapper .set_text1 {
         grid-column-start: 1;
         grid-column-end: 2;
+        width:100%;
         grid-row-start: 2;
         grid-row-end: 3;
         padding-top: 0;
@@ -83,6 +84,8 @@ section {
     }
     .set_wrapper .set_text2 {
         text-align: left;
+        width:100%;
+        padding-left:0;
         padding-top: 0;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -126,7 +129,7 @@ h2 {
 .set_text1 {
     font-weight:300;
     padding-top: 4em;
-    width:80%;
+    width:70%;
     padding-left:4em;
     grid-column-start: 5;
     grid-column-end: 7;
@@ -143,9 +146,11 @@ h2 {
 
 .set_text2 {
     font-weight:300;
-    width:80%;
+    width:70%;
+    float:right;
     padding-right:2em;
     text-align: right;
+    padding-left:4em;
     padding-top: 4em;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -163,6 +168,7 @@ h2 {
     z-index: 0;
 }
 
+
 /**HERO**/
 
 .img-spread {
@@ -172,13 +178,17 @@ h2 {
     overflow: none;
 }
 
+.img-spread-dark{
+    display:none;
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+    overflow: none;
+}
+
 .padding-top {
     padding-top:18em;
 }
-.smaller {
-    width: 10em;
-}
-
 
 .hero-text .featured {
     position: absolute;
@@ -199,7 +209,7 @@ h2 {
     z-index: 99999999999999999999;
     padding-left: 10vw;
     position: absolute;
-    margin-top: -20em;
+    margin-top: -23em;
 }
 
 .four_column_wrapper a{
@@ -261,6 +271,13 @@ h2 {
     .hero-text h4 {
         width:100%;
     }
+      .img-spread{
+        display:none;
+    }  
+    .img-spread-dark{
+        display:block;
+   
+    }
 }
 
 .hero-text h1 {
@@ -293,6 +310,10 @@ h2 {
     column-gap: 1em;
 }
 
+.stories_wrapper a {
+    color:Black;
+}
+
 .article_img {
     width: 100%;
     object-fit: cover;
@@ -322,6 +343,14 @@ h2 {
     .body-container {
         padding-left: 10vw;
         padding-right: 10vw;
+    }
+}
+
+@media screen and (max-width:800px){
+    .body-container {
+        width:100%;
+
+        overflow:hidden;
     }
 }
 
@@ -502,6 +531,11 @@ a {
     display: none;
 }
 
+
+.nav_module .icon-index {
+    display: none;
+}
+
 /*Dropdown tutorial from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
 .dropdown {
     float: left;
@@ -568,6 +602,17 @@ a {
         margin-top: -0.2em;
         display: block;
     }
+
+      /* Hamburger Icon Visible */
+      .nav_module a.icon-index {
+        opacity: 1;
+        right: 0;
+        font-size: 1.5em;
+        position: absolute;
+        margin-top: -0.2em;
+        display: block;
+    }
+
     /* Links collapse down */
     .nav_module.responsive {
         position: relative;
@@ -590,11 +635,19 @@ a {
     .nav_module.responsive .active {
         font-weight: 900;
     }
+
+      /* !!ONLY FOR INDEX PAGE Adjust hamburger icon placement */
+      .nav_module.responsive .icon-index {
+        position: absolute;
+        margin-top: -10.35em;
+    }
+
     /* Adjust hamburger icon placement */
     .nav_module.responsive .icon {
         position: absolute;
         margin-top: -12em;
     }
+
     /* Links for mobile nav composition */
     .nav_module.responsive a {
         float: none;
@@ -618,11 +671,12 @@ a {
 footer {
     background: #202020;
     width: 100%;
+    overflow:hidden;
 }
 
 .footer-container {
     display: grid;
-    padding: 5em;
+    padding:3em;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -642,6 +696,7 @@ footer {
 .footer-div h3 {
     color: white;
     font-weight: 300;
+    width:80%;
     font-size: 0.90em;
 }
 
@@ -679,6 +734,8 @@ input[type=email] {
     .footer-container {
         grid-template-columns: 1fr;
         row-gap: 1em;
+        width:100%;
+        padding:1.5em;
     }
     .footer-links {
         padding-left: 0;

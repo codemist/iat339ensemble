@@ -415,6 +415,14 @@ h3 {
     column-gap: 1em;
 }
 
+.img-spread-mobile{
+    display:none;
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+    overflow: none;
+}
+
 @media screen and (max-width:800px) {
     /* Shrink stories wrapper into 2 columns */
     .four_column_wrapper {
@@ -422,11 +430,16 @@ h3 {
         grid-template-columns: 1fr 1fr;
         row-gap: 6em;
     }
+    .img-spread {
+        display:none;
+    }
+    .img-spread-mobile {
+        display:inline;
+    }
     .hero-text {
-        padding-left: 0;
-        color: white;
+        padding-left: 1em;
         padding-top:3em;
-        background: rgba(0, 0, 0, 0.5);
+        color:black;
     }
     .hero-text h4 {
         width: 100%;
