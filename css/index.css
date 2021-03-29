@@ -52,7 +52,7 @@ section {
 
 /* Media Query for sets */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
     .set_wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -131,6 +131,7 @@ h2 {
     padding-top: 4em;
     width:70%;
     padding-left:4em;
+    line-height:1.5em;
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -148,6 +149,7 @@ h2 {
     font-weight:300;
     width:70%;
     float:right;
+    line-height:1.5em;
     padding-right:2em;
     text-align: right;
     padding-left:4em;
@@ -310,6 +312,12 @@ h2 {
     column-gap: 1em;
 }
 
+.stories_wrapper h4 {
+    margin:0;
+    padding-top:1em;
+    padding-bottom:1.2em;
+}
+
 .stories_wrapper a {
     color:Black;
 }
@@ -319,7 +327,7 @@ h2 {
     object-fit: cover;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .stories_wrapper {
         margin-top: 2em;
         display: grid;
@@ -394,7 +402,7 @@ h2 {
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     /* Shrink stories wrapper into 2 columns */
     .four_column_wrapper {
         display: grid;
@@ -735,7 +743,7 @@ input[type=email] {
     .footer-container {
         grid-template-columns: 1fr;
         row-gap: 1em;
-        width:100%;
+        /* width:100%; */
         padding:1.5em;
     }
     .footer-links {
