@@ -95,6 +95,8 @@ footer {
     .footer-container{
         padding:3em;
     }
+
+    
 }
 
 input[type=email] {
@@ -157,8 +159,8 @@ input[type=email] {
 
 
 .checkout-container { 
-    margin:1em;
     display:grid;
+    margin-top:5em;
     grid-template-columns: 1fr 1fr;
     font-size:0.8em;
     text-transform:uppercase;
@@ -167,6 +169,11 @@ input[type=email] {
 @media screen and (max-width:800px){
     .checkout-container {
         grid-template-columns:1fr;
+    }
+
+        
+    .checkout-container-div .form{
+        width:100%;
     }
 }
 
