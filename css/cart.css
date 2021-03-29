@@ -1,0 +1,516 @@
+
+/**Color Variables**/
+:root {
+    --cto-color: #5BAF80;
+    /**Call to Action**/
+    --lightgray-color: #f2f2f2;
+    /**Light gray bg**/
+}
+
+body {
+    font-family: 'Karla', sans-serif; /**Main font family**/
+    margin:0;
+}
+
+section{
+    margin:1em;
+    padding-bottom:3em;
+}
+
+/*shopping cart*/
+/*From designmodo: how to create a shopping cart ui*/
+
+.shopping-cart {
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    color:black;
+    flex-direction: column;
+  }
+
+  .shopping-cart-title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .shopping-cart-item {
+      padding-top:1em;
+    height: 120px;
+    display: flex;
+  }
+
+/*    
+  .shopping-cart-item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+  } */
+
+  .buttons {
+    position: relative;
+    padding-top: 1.9em;
+    padding-right: 1em;
+  }
+
+  .delete-btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .delete-btn {
+    width: 18px;
+    height: 17px;
+  }
+   
+  .shopping-cart-image {
+    padding-right:1em;
+  }
+   
+  .shopping-cart-description {
+    padding-top: 10px;
+    margin-right: 2em;
+    width:10em;
+  }
+   
+  .shopping-cart-description span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 400;
+    color:black;
+  }
+  
+
+  .quantity {
+    width:12em;
+    padding-top: 20px;
+    padding-right:1em;
+  }
+
+  .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #ececec;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+  }
+  .plus-btn img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+
+  .total-price {
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+
+  @media screen and (max-width: 576px) {
+    
+  .quantity {
+    padding-right:0em;
+    width:10em;
+  }
+   
+  .shopping-cart-description{
+      width:6em;
+      word-break:break-all;
+   }
+
+
+  }
+
+  
+  @media screen and (max-width: 450px) {
+    
+    .quantity {
+      padding-right:0em;
+      width:5em;
+      padding-top:0;
+    }
+     
+    .shopping-cart-description{
+        width:5em;
+        word-break:break-all;
+     }
+
+  
+    }
+
+
+a {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--cto-color);
+}
+
+
+/*Override NAV module properties*/
+.nav_module a{
+    color:black !important;
+}
+
+
+.nav_module .dropdown .fa {
+    color:black !important;
+  
+}
+.nav_module .dropdown-content{
+    background:rgba(255, 255, 255, 0.678);
+}
+
+/***FOOTER****/
+
+footer {
+    background:#202020;
+    width:100%;
+}
+
+.footer-container {
+    display:grid;
+    padding:5em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-div h1{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2em;
+    color:white;
+    font-weight:normal;
+    margin:0 !important;
+}
+
+.footer-div:nth-child(2){
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.footer-div h3{
+    color:white;
+    width:80%;
+    font-weight:300;
+    font-size:0.90em;
+}
+
+@media screen and (max-width:600px){
+    .footer-div h3{
+        width:100%;
+    }
+
+    .footer-container{
+        padding:3em;
+    }
+
+    
+}
+
+input[type=email] {
+    padding: 12px 30px;
+    width: 30%;
+    border: none;
+    color:#ACACAC;
+    background-color:#3D3D3D;
+}
+
+
+.submission {
+    background-color:#B9B9B9;
+    border: none;
+    color: #202020;
+    width:20%;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.footer-links {
+    font-size:0.83em;
+    padding-left:2em;
+}
+
+
+@media screen and (max-width:520px){
+    .footer-container{
+     grid-template-columns:1fr;
+     row-gap: 1em;
+    }
+
+    .footer-links {
+        padding-left:0;
+    }
+}
+
+.footer-links a{
+    color:white;
+    padding-bottom:0.5em;
+    font-weight:normal;
+    display:block;
+}
+
+.footer-links title {
+    text-transform:uppercase;
+    color:#575757;
+    padding-bottom:1em;
+    display:block;
+    font-weight:bold;
+}
+.footer-links a:hover {
+    color:var(--cto-color);
+}
+
+
+.checkout-container { 
+    display:grid;
+    margin-top:5em;
+    grid-template-columns: 1fr 1fr;
+    font-size:0.8em;
+    column-gap: 2em;
+    /* text-transform:uppercase; */
+}
+
+@media screen and (max-width:800px){
+    .checkout-container {
+        grid-template-columns:1fr;
+    }
+
+        
+    .checkout-container-div .form{
+        width:100%;
+    }
+}
+
+h1 {
+    font-size:2em;
+    font-weight:500;
+}
+
+.checkout-container-div:nth-child(1) {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.checkout-container h3 {
+    margin:0;
+    padding-top:1em;
+    padding-bottom:0.3em;
+}
+
+
+.longform, .checkout-header {
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+input[type=name] {
+    padding-top:12px;
+    padding-bottom:12px;
+    border: none;
+    width:100%;
+    background-color: var(--lightgray-color);
+}
+
+.checkout-container-div .form{
+    width:95%;
+}
+
+
+.checkout-container-div .longform{
+    width:100%;
+}
+
+.checkout-container-div:nth-child(2){
+    margin-top:8.5em;
+}
+
+.order-summary-container{
+    text-transform:none;
+    padding-bottom:3em;
+    font-weight:100;
+    background:var(--lightgray-color);
+}
+
+.specs-wrapper {
+    padding-top:1em;
+}
+
+.alignleft {
+	float: left;
+    font-size:1.2em;
+    font-weight:400;
+}
+.alignright {
+	float: right;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.order-summary {
+    padding:2em;
+
+}
+
+.order-listing-desc {
+    padding-left:1em;
+}
+
+.order-summary h1 {
+    font-weight:bold;
+    padding-bottom:1em;
+}
+
+.order-summary h4 {
+    display:inline;
+    font-size:1.2em;
+    font-weight:400;
+}
+
+.order-summary-listing{
+    padding-bottom:1em;
+}
+.order-summary-listing div {
+    display:inline 
+}
+
+.order-summary-image {
+    width: 5em;
+    display:inline;
+    height:5em;
+    object-fit: cover;
+}
+
+/*CHECKBOX*/
+/*from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+
+
+/* Create a custom checkbox */
+
+.check-wrapper{
+    padding-top:2em;
+}
+
+.check-wrapper h4 {
+    font-size:0.7em;
+    padding-top:0.2em;
+}
+
+
+.check-wrapper h1{
+    padding-bottom:1em;
+}
+
+.check-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    width:100%;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius:100%;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check-container input:checked ~ .checkmark {
+    background-color:var(--cto-color);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /**BTN**/
+
+.buttons-order-summary {
+    width:100%;
+    margin-top:5em;
+}
+  
+.button {
+    background-color: #6EB78E;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--lightgray-color);
+    color: black;
+}
+
