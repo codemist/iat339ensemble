@@ -251,20 +251,53 @@ input[type=email] {
     color:var(--cto-color);
 }
 
+/***Contact Module****/
 
 .contact-container { 
     margin:1em;
+    margin-top: 6em;
+    padding-right: 4em;
+    margin-bottom: 0em;
     display:grid;
     grid-template-columns: 1fr 1fr;
     font-size:0.8em;
-    text-transform:uppercase;
+}
+
+
+.contact-container-div {
+
+padding-left: 4em;
+padding-bottom: 28em;
+}
+
+
+
+.contactinfo-container{
+    text-transform:none;
+    font-weight:100;
+    background:var(--lightgray-color);
+padding: 3em;
+padding-left: 5em;
+
+height: 50%;
+
+
 }
 
 h1 {
-    text-transform:lowercase;
-    font-size:2em;
+    font-size:3em;
     font-weight:500;
+    padding-top: 40px;
 }
+
+
+
+h2 {
+    font-size:3em;
+    font-weight:500;
+    padding-bottom: 1em;
+}
+
 
 .contact-container-div:nth-child(1) {
     display:grid;
@@ -273,16 +306,45 @@ h1 {
 
 .contact-container h3 {
     font-size:1em;
-    font-weight:400;
+    font-weight:600;
 
     margin:0;
-    padding-top:1em;
-    padding-bottom:0.3em;
+    padding-bottom:1em;
+padding-top: 1em;
 }
+
+
+.contact-container h5 {
+    font-size:1.5em;
+    font-weight:400;
+    margin:0;
+    padding-bottom:2em;
+}
+
+
+
+.contact-container h4 {
+    font-size:1.2em;
+    font-weight:500;
+
+    margin:0;
+    padding-bottom:4em;
+}
+
+
+
 .bigform, .contact-header {
     grid-column-start: 1;
     grid-column-end:3;
 }
+
+
+.bigform {
+
+padding-top: .5em;
+}
+
+
 input[type=name] {
     padding-top:12px;
     padding-bottom:12px;
@@ -291,11 +353,23 @@ input[type=name] {
     background-color: var(--lightgray-color);
 }
 
+
+input[type=name1] {
+    padding-top:12px;
+    padding-bottom:12px;
+    border: none;
+    width:100%;
+    height: 150px;
+    background-color: var(--lightgray-color);
+}
+
+
+
 .clear {
     background-color:none;
     border: none;
     color: #202020;
-    width:20%;
+    width:15%;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -309,7 +383,7 @@ input[type=name] {
     background-color:var(--cto-color);;
     border: none;
     color: white;
-    width:20%;
+    width:15%;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -323,18 +397,26 @@ input[type=name] {
     width:95%;
 }
 
+.contact-container-div .form2{
+    width:100%;
+}
 
 .contact-container-div .bigform{
     width:100%;
 }
 
 .contact-container-div:nth-child(2){
-    margin-top:8.5em;
+    margin-top:1em;
 }
 
-.contactinfo-container{
-    text-transform:none;
-    font-weight:100;
-    background:var(--lightgray-color);
-    padding:2em;
+
+.buttons {
+
+padding-top: 2em;
+    text-align: right;
+    width:91%;
+
+
 }
+
+
