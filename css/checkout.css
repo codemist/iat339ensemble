@@ -158,6 +158,7 @@ input[type=email] {
 }
 
 
+/*Checkout Container Module*/
 .checkout-container { 
     display:grid;
     margin-top:5em;
@@ -193,7 +194,6 @@ h1 {
     padding-top:1em;
     padding-bottom:0.3em;
 }
-
 
 .longform, .checkout-header {
     grid-column-start: 1;
@@ -241,6 +241,8 @@ input[type=name] {
     font-weight:bold;
     font-size:1.2em;
 }
+
+/*Order Summary Module*/
 
 .order-summary {
     padding:2em;

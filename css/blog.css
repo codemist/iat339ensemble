@@ -232,13 +232,6 @@ h3{
     font-size:1em;
     font-weight:300;
 }
-/* 
-.education h3{
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 2;
-} */
 
 h4{
     font-size:1.5em;
@@ -324,7 +317,6 @@ h4{
 
     .education_img1, .education_img2, .education_img3, .education_img4 {
         margin-top:3em;
-    }
-    
+    }  
     
 }

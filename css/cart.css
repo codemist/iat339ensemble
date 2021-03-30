@@ -17,7 +17,7 @@ section{
     padding-bottom:3em;
 }
 
-/*shopping cart*/
+/*shopping cart Module */
 /*From designmodo: how to create a shopping cart ui*/
 
 .shopping-cart {
@@ -41,12 +41,6 @@ section{
     height: 120px;
     display: flex;
   }
-
-/*    
-  .shopping-cart-item:nth-child(3) {
-    border-top:  1px solid #E1E8EE;
-    border-bottom:  1px solid #E1E8EE;
-  } */
 
   .buttons {
     position: relative;
@@ -125,7 +119,7 @@ section{
     font-weight: 700;
   }
 
-
+/*Media QWuery for Cart Module*/
   @media screen and (max-width: 576px) {
     
   .quantity {
@@ -309,6 +303,8 @@ h1 {
     font-weight:500;
 }
 
+/*CHECKOUT Summary MODULE*/
+
 .checkout-container-div:nth-child(1) {
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -345,6 +341,9 @@ input[type=name] {
 .checkout-container-div:nth-child(2){
     margin-top:8.5em;
 }
+
+
+/*Order Summary MODULE*/
 
 .order-summary-container{
     text-transform:none;

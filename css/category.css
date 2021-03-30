@@ -61,6 +61,8 @@ section {
 
 /* Start-end column for each image */
 
+/* cl standards for chair listing, each class is 1 item */
+
 .cl1 {
     overflow:hidden;
     grid-column-start: 1;
