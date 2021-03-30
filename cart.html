@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/cart.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -65,113 +65,84 @@
         <div class="checkout-container">
             <div class="checkout-container-div">
 
-                <div class="checkout-header">
-                    <h1>Checkout</h1>
+            <!--From designmodo: how to create a shopping cart ui-->
+    
+            <div class="shopping-cart">
+                <h1>Shopping Cart</h1>
+          
+                <!-- Product #1 -->
+                <br><br>
+                <div class="shopping-cart-item">
+                  <div class="buttons">
+                    <span class="delete-btn">
+                        <img src="img/delete-icn.svg">
+                    </span>
+                  </div>
+               
+                  <div class="shopping-cart-image">
+                    <img src="img/cart-listing.png" alt="" />
+                  </div>
+               
+                  <div class="shopping-cart-description">
+                    <span>Elm Management Chair </span>
+                    
+                  </div>
+               
+                  <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                  </div>
+               
+                  <div class="total-price">$410</div>
                 </div>
 
-                <form class="form">
-                    <h3>First name</h3>
-                    <input type="name" class="form" placeholder="" />
-                </form>
+                <!--product 2-->
+                <div class="shopping-cart-item">
+                    <div class="buttons">
+                      <span class="delete-btn">
+                          <img src="img/delete-icn.svg">
+                      </span>
+                    </div>
+                 
+                    <div class="shopping-cart-image">
+                      <img src="img/cart-listing2.png" alt="" />
+                    </div>
+                 
+                    <div class="shopping-cart-description">
+                      <span>The Vogue Chair </span>
+                      
+                    </div>
+                 
+                    <div class="quantity">
+                      <button class="plus-btn" type="button" name="button">
+                        <img src="img/plus.svg" alt="" />
+                      </button>
+                      <input type="text" name="name" value="1">
+                      <button class="minus-btn" type="button" name="button">
+                        <img src="img/minus.svg" alt="" />
+                      </button>
+                    </div>
+                 
+                    <div class="total-price">$299</div>
+                  </div>
+  
 
-                <form class="form">
-                    <h3>Last name</h3>
-                    <input type="name" class="form" placeholder="" />
-                </form>
+               
+               
+              </div>
 
-                <form class="longform">
-                    <h3>ADDRESS</h3>
-                    <input type="name" class="form" placeholder="" />
-                </form>
-
-                <form class="form">
-                    <h3>CITY</h3>
-                    <input type="name" class="form" placeholder="" />
-                </form>
-
-                <form class="form">
-                    <h3>PROVINCE</h3>
-                    <input type="name" class="form" placeholder="" />
-                </form>
-
-
-                <form class="longform">
-                    <h3>PHONE NUMBER</h3>
-                    <input type="name" class="form" placeholder="(+1)" />
-                </form>
-
-
-                <form class="longform">
-                    <h3>EMAIL</h3>
-                    <input type="name" class="form" placeholder="(+1)" />
-                </form>
-
-
-                <p>
-                <div class="checkout-header">
-                    <h1>Payment</h1>
-                </div>
-                </p>
-
-                <form class="longform">
-                    <h3>card number</h3>
-                    <input type="name" class="form" placeholder="(+1)" />
-                </form>
-
-                <form class="form">
-                    <h3>MM/YY</h3>
-                    <input type="name" class="form" placeholder="" />
-                </form>
-
-                <form class="form">
-                    <h3>CVC</h3>
-                    <input type="name" class="form" placeholder="" />
-                </form>
-
-
-
-
-
-                <div class="check-wrapper">
-
-                    <h1>Shipment</h1>
-
-                    <label class="check-container">
-                        <h4>STANDARD (8-17 BUSINESS DAYS)</h4>
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="check-container">
-                        <h4>EXPEDITED (3-4 BUSINESS DAYS)</h4>
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-
-                </div>
-
-            </div>
+          </div>
 
             <div class="checkout-container-div">
                 <div class="order-summary-container">
                     <div class="order-summary">
-                        <div class="order-summary-listing">
-                            <h1>Order Summary</h1>
-                            <div class="list-wrapper"><img src="img/cart-checkout-1.png" class="order-summary-image">
-                            </div>
-                            <div class="list-wrapper order-listing-desc">
-                                <h4>Elm Management Chair <strong>($410)</strong>
-                            </div>
-                        </div>
-
-                        <div class="order-summary-listing">
-                            <div class="list-wrapper"><img src="img/cart-checkout-2.png" class="order-summary-image">
-                            </div>
-                            <div class="list-wrapper order-listing-desc">
-                                <h4>The Vogue Chair <strong>($299)</strong>
-                            </div>
-                        </div>
-
-
+                        <h1>Order Summary</h1>
+   
                         <div class="specs-wrapper">
 
 
@@ -203,7 +174,7 @@
                             </div>
 
                             <div class="buttons-order-summary">
-                            <a href="thankyou.html" class="button alignright">PURCHASE</a>
+                            <a href="checkout.html" class="button alignright">CHECKOUT</a>
                             </div>
                         </div>
 
