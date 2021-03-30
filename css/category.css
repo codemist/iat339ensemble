@@ -29,6 +29,7 @@ section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 6em;
     padding-bottom: 3em;
+    padding-top:1em;
     column-gap: 1em; 
 
  }
