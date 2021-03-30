@@ -43,7 +43,9 @@ code {
         padding-bottom: 1em;
         width: 100%;
     }
+
 }
+
 
 /***Sidebar Anchor Links****/
 
@@ -82,6 +84,8 @@ code {
 .container .giant_column {
     width: 100%;
 }
+
+
 
 /*Dropdown tutorial from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
 .dropdown {
@@ -133,6 +137,10 @@ code {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .giant_column:first-child{
+        margin-top:5em;
+    }
 }
 
 /***PRODUCT MODULE***/
@@ -151,6 +159,8 @@ code {
 
 .product_module .desc {
     padding-top: 10em;
+    font-weight:300;
+    line-height:1.5em;
     float: right;
     margin-left: 3em;
 }
@@ -240,7 +250,7 @@ code {
 
 .review-header {
     background:var(--lightgray-color);
-    text-transform:uppercase;
+    /* text-transform:uppercase; */
     font-size:0.8em;
     padding:1em;
  
@@ -300,6 +310,13 @@ code {
 .nav_module .icon {
     display: none;
 }
+
+
+
+.nav_module .icon-index {
+    display: none;
+}
+
 
 /*Dropdown tutorial from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
 .dropdown {
@@ -368,6 +385,16 @@ code {
         margin-top: -0.2em;
         display: block;
     }
+       /* Hamburger Icon Visible */
+       .nav_module a.icon-index {
+        opacity: 1;
+        right: 0;
+        font-size: 1.5em;
+        position: absolute;
+        margin-top: -0.2em;
+        display: block;
+    }
+
     /* Links collapse down */
     .nav_module.responsive {
         position: relative;
@@ -1045,7 +1072,8 @@ h1 {
 
 .checkout-container { 
     display:grid;
-    margin-top:5em;
+    margin-top:1em;
+    margin-bottom:em;
     grid-template-columns: 1fr 1fr;
     font-size:0.8em;
     text-transform:uppercase;
@@ -1061,12 +1089,12 @@ h1 {
         width:100%;
     }
 }
-
+/* 
 h1 {
     text-transform:lowercase;
     font-size:2em;
     font-weight:500;
-}
+} */
 
 .checkout-container-div:nth-child(1) {
     display:grid;
@@ -1083,6 +1111,13 @@ h1 {
 .longform, .checkout-header {
     grid-column-start: 1;
     grid-column-end:3;
+    
+}
+
+
+
+.checkout-header {
+    text-transform: none;
 }
 input[type=name] {
     padding-top:12px;
@@ -1102,7 +1137,8 @@ input[type=name] {
 }
 
 .checkout-container-div:nth-child(2){
-    margin-top:8.5em;
+    margin-top:1em;
+    padding-left:1em;
 }
 
 .order-summary-container{
@@ -1113,7 +1149,7 @@ input[type=name] {
 }
 
 .specs-wrapper {
-    padding-top:1em;
+    padding-top:0em;
 }
 
 .alignleft {
@@ -1128,8 +1164,7 @@ input[type=name] {
 }
 
 .order-summary {
-    padding:2em;
-
+     padding:2em; 
 }
 
 .order-listing-desc {
@@ -1161,6 +1196,65 @@ input[type=name] {
     object-fit: cover;
 }
 
+
+/**Three Column Grid**/
+.testimonial_wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:1em;
+}
+
+.testimonial_description {
+    padding-top:1em;
+}
+
+.testimonial_description .user {
+    position:absolute;
+    margin-top:-3em;
+    margin-left:4em;
+}
+
+.testimonial_description .user h4 {
+    font-weight:400;
+    margin:0;
+}
+
+
+.testimonial_description .user h2 {
+    font-size:1.2em;
+    margin:0;
+}
+
+.testimonial_description img {
+    width:3em;
+}
+
+
+.article_img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .testimonial_wrapper {
+        grid-template-columns: 1fr 1fr;
+        row-gap:1em;
+
+    }
+}
+
+
+@media screen and (max-width:576px){
+    .testimonial_wrapper {
+        grid-template-columns: 1fr;
+        row-gap:1em;
+
+    }
+}
+
 /*CHECKBOX*/
 /*from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
 
@@ -1179,6 +1273,7 @@ input[type=name] {
 
 .check-wrapper h1{
     padding-bottom:1em;
+    text-transform: none;
 }
 
 .check-container{
@@ -1274,7 +1369,7 @@ input[type=name] {
 }
   /**Shopping Cart**/
 
-shopping-cart {
+.shopping-cart {
     width: 100%;
     background: #FFFFFF;
     display: flex;
@@ -1291,7 +1386,7 @@ shopping-cart {
   }
    
   .shopping-cart-item {
-      padding-top:1em;
+    padding-top:1em;
     height: 120px;
     display: flex;
   }
@@ -1462,6 +1557,11 @@ input[type=email] {
     padding: 12px 30px;
     width: 200px;
     border: none;
+    color: #ACACAC;
+    /* background-color: #3D3D3D; */
+}
+
+.footer-div input[type=email]{
     color: #ACACAC;
     background-color: #3D3D3D;
 }

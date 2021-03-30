@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
@@ -15,24 +16,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
 
+     <!--Font Awesome-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 
 <title>Sitemap & Wireframes</title>
 
-
+ 
 <body style="background:#f2f2f2;">
+    
+    <!-- NAVBAR-->
+    <div class="nav_module" id="myTopnav" >
+        <div class="dropdown">
+            <div class="dropbtn">
+                <a href="#">shop </a>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="category.html">chairs</a>
+                <a href="category.html">tables</a>
+                <a href="category.html">storage</a>
+                <a href="category.html">accessories</a>
+            </div>
+        </div>
+        <div class="display-on-mobile">
+            <a href="category.html">chairs</a>
+            <a href="category.html">tables</a>
+            <a href="category.html">storage</a>
+        </div>
+        <a href="blog.html">on sale</a>
+        <a href="blog.html">blog</a>
+        <a href="stories.html">stories</a>
 
-    <!--Links-->
-    <section id="anchor_links">
-    <h3>Links
-        <ul>
-            <li><a href="styleguide.html">Back to Styleguide</a></li>
-            <li> <a href="sitemap_and_mockup.html">Sitemap & Wireframes</a></li>
-            <li><a href="citations.html">Citations</a></li>
-        </ul>
-    </h3>
-    </section>
+        <div class="right_float">
+            <a href="error.html">user</a>
+            <a href="cart.html">cart <strong>(3)</strong></a>
+        </div>
 
+        <a href="javascript:void(0);" class="icon-index" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="title" href="index.html">ensemble</a>
+    </div>
+
+
+   <div style="margin:2em;">
     <!--Image of our sitemap-->
     <section id="sitemap">
         <h1>Sitemap</h1>
@@ -85,6 +115,72 @@
 
         </ul>
     </section>
+
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-div">
+            <h1>ensemble</h1>
+            <h3>
+                Love to be the first to know about our newly released furniture straight to your inbox? Us too! Sign
+                up for our newsletter here!
+            </h3>
+            <p>
+                <!--Footer Newsletter Form -->
+            <form class="form">
+                <input type="email" class="form" placeholder="YOUR EMAIL" />
+                <a href="#" class="submission">SUBSCRIBE</a>
+            </form>
+            </p>
+        </div>
+        <!--Footer Links-->
+        <div class="footer-div">
+            <div class="footer-links">
+                <!--Footer Column 1 -->
+                <title>ENSEMBLE</title>
+                <a href="about_us.html">About Us</a>
+                <a href="styleguide.html">Style Guide</a>
+                <a href="sitemap_and_mockup.html">Wireframes</a>
+                <a href="citations.html">Citations</a>
+                <a href="https://github.com/codemist/iat339ensemble">Github</a>
+            </div>
+
+            <div class="footer-links">
+                <!--Footer Column 2 -->
+                <title>HELP</title>
+                <a href="contact.html">Contact</a>
+                <a href="error.html">Gift Card</a>
+                <a href="error.html">Returns & Exchange</a>
+                <a href="error.html">FAQ</a>
+            </div>
+
+            <div class="footer-links">
+                <!--Footer Column 3 -->
+                <title>COMMUNITY</title>
+                <a href="stories.html">Stories</a>
+                <a href="error.html">Newletter</a>
+                <a href="blog.html">Blog</a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+    <!--Javascript for Navbar-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav_module") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav_module";
+            }
+        }
+    </script>
 
 </body>
 </html>
