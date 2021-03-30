@@ -817,7 +817,7 @@ input[type=email] {
 }
 
 .list {
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 }
 
 #citations_body li {
@@ -960,6 +960,18 @@ h1 {
         padding-right: 1em;
     }
 }
+
+
+
+
+
+
+.sample_code{
+
+padding-bottom: 4em;
+
+}
+
 
 /**Purchase and Add Promo code buttons**/
 
@@ -1276,7 +1288,167 @@ input[type=name] {
     background-color: var(--lightgray-color);
     color: black;
 }
+  /**Shopping Cart**/
 
+shopping-cart {
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    color:black;
+    flex-direction: column;
+  }
+
+  .shopping-cart-title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .shopping-cart-item {
+      padding-top:1em;
+    height: 120px;
+    display: flex;
+  }
+
+/*    
+  .shopping-cart-item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+  } */
+
+  .buttons {
+    position: relative;
+    padding-top: 1.9em;
+    padding-right: 1em;
+  }
+
+  .delete-btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .delete-btn {
+    width: 18px;
+    height: 17px;
+  }
+   
+  .shopping-cart-image {
+    padding-right:1em;
+  }
+   
+  .shopping-cart-description {
+    padding-top: 10px;
+    margin-right: 2em;
+    width:10em;
+  }
+   
+  .shopping-cart-description span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 400;
+    color:black;
+  }
+  
+
+  .quantity {
+    width:12em;
+    padding-top: 20px;
+    padding-right:1em;
+  }
+
+  .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #ececec;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+  }
+  .plus-btn img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+
+  .total-price {
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+
+  @media screen and (max-width: 576px) {
+    
+  .quantity {
+    padding-right:0em;
+    width:10em;
+  }
+   
+  .shopping-cart-description{
+      width:6em;
+      word-break:break-all;
+   }
+
+
+  }
+
+  
+  @media screen and (max-width: 450px) {
+    
+    .quantity {
+      padding-right:0em;
+      width:5em;
+      padding-top:0;
+    }
+     
+    .shopping-cart-description{
+        width:5em;
+        word-break:break-all;
+     }
+
+  
+    }
+
+
+a {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--cto-color);
+}
+
+
+/*Override NAV module properties*/
+.nav_module a{
+    color:black !important;
+}
+
+
+.nav_module .dropdown .fa {
+    color:black !important;
+  
+}
+.nav_module .dropdown-content{
+    background:rgba(255, 255, 255, 0.678);
+}
 
 
 /*footer*/
