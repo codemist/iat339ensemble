@@ -155,11 +155,6 @@ input[type=email] {
 }
 
 /***Contact Module****/
-
-
-
-
-
 .contact-container { 
     /* margin:1em; */
     margin-top: 6em;
@@ -177,6 +172,7 @@ input[type=email] {
     }
 }
 
+/***Contact Module Text****/
 
 
 .contactinfo-container{
@@ -237,6 +233,7 @@ padding-top: 1em;
     padding-bottom:1.5em;
 }
 
+/***Contact Headings****/
 
 
 .bigform, .contact-header {
@@ -249,6 +246,9 @@ padding-top: 1em;
 
 padding-top: .5em;
 }
+
+
+/***Input Forms****/
 
 
 input[type=name] {
@@ -315,6 +315,7 @@ input[type=name1] {
     margin-top:1em;
 }
 
+/*** Send and Clear Buttons****/
 
 .buttons {
 

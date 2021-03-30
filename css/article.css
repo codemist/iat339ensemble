@@ -112,6 +112,7 @@ footer {
     }
 }
 
+
 input[type=email] {
     padding: 12px 30px;
     width: 30%;
@@ -162,6 +163,10 @@ input[type=email] {
 }
 
 
+
+/*Article Writing*/
+
+
 .article_text {
     margin-left: 0px;
     font-size: 1.2em;
@@ -196,6 +201,9 @@ h1 {
     margin-top:0.5em;
 }
 
+/*Author Subheading*/
+
+
 .author_txt {
     font-size: 1em;
     margin:0;
@@ -222,6 +230,11 @@ h1 {
 .footer-links a:hover {
     color: var(--cto-color);
 }
+
+
+
+/*Article Writing and Image*/
+
 
 .intro {
     text-align: center;
