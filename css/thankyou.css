@@ -1,4 +1,4 @@
-
+/************* THANKYOU CONTAINER *************/
 
 .thankyou-container {
     padding:8em 3em 8em 3em; /* top, right, bottom, and left*/
@@ -10,6 +10,8 @@
 .thankyou-image{
     object-fit: cover;
 }
+
+/* Button to go back to the landing page*/
 
 .back{
     background-color: #e7e7e7;

@@ -1,3 +1,11 @@
+/************* ERROR CONTAINER *************/
+
+.error-container {
+    padding:8em 3em 8em 3em; /* top, right, bottom, and left*/
+    margin:6em 3em 6em 3em;
+    text-align:center;
+    background: #f2f2f2;
+}
 
 /*Override NAV module properties*/
 
@@ -11,11 +19,4 @@
 
 .nav_module .dropdown-content {
     background: rgba(255, 255, 255, 0.678);
-}
-
-.error-container {
-    padding:8em 3em 8em 3em; /* top, right, bottom, and left*/
-    margin:6em 3em 6em 3em;
-    text-align:center;
-    background: #f2f2f2;
 }

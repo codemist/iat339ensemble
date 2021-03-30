@@ -80,9 +80,6 @@ footer {
 }
 
 @media screen and (max-width:600px) {
-    /* .footer-div h3 {
-        width: 100%;
-    } */
     .footer-container {
         padding: 3em;
     }
