@@ -1,11 +1,16 @@
+
+/*Override NAV module properties*/
+
 .nav_module a {
-    float: left;
-    text-align: center;
-    color: black !important;;
-    padding-right: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.8em;
+    color: black !important;
+}
+
+.nav_module .dropdown .fa {
+    color: black !important;
+}
+
+.nav_module .dropdown-content {
+    background: rgba(255, 255, 255, 0.678);
 }
 
 .error-container {
