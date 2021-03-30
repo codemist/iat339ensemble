@@ -322,6 +322,9 @@ h2 {
     color:Black;
 }
 
+.stories {
+    height:100%;
+}
 .article_img {
     width: 100%;
     object-fit: cover;
