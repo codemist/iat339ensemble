@@ -168,6 +168,19 @@ input[type=email] {
     /* font-family: 'Sorts Mill Goudy', serif; */
     padding-top:1.5em;
     line-height:1.5em;
+    width:80%;
+    font-weight:300;
+}
+
+.article_text h2 {
+    margin-bottom:0.5em;
+    font-size:1.2em;
+}
+
+@media screen and (max-width:800px){
+    .article_text {
+        width:100%;
+    }
 }
 
 

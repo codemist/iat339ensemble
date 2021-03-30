@@ -685,7 +685,7 @@ footer {
 
 .footer-container {
     display: grid;
-    padding:3em;
+    padding:5em;
     grid-template-columns: 1fr 1fr;
 }
 
