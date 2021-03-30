@@ -147,6 +147,13 @@ input[type=email] {
     /*top, right, bottom, left https://www.w3.org/Style/Examples/007/center.en.html*/
 }
 
+
+
+.intro p{
+    font-weight:300;
+    line-height:1.5em;
+}
+
 /** Sets **/
 
 /************* SETS GRID *************/
