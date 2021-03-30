@@ -1036,6 +1036,249 @@ h1 {
   color: orange;
 }
 
+
+
+
+
+
+
+
+  /* Checkout Module */
+
+
+
+.checkout-container { 
+    display:grid;
+    margin-top:5em;
+    grid-template-columns: 1fr 1fr;
+    font-size:0.8em;
+    text-transform:uppercase;
+}
+
+@media screen and (max-width:800px){
+    .checkout-container {
+        grid-template-columns:1fr;
+    }
+
+        
+    .checkout-container-div .form{
+        width:100%;
+    }
+}
+
+h1 {
+    text-transform:lowercase;
+    font-size:2em;
+    font-weight:500;
+}
+
+.checkout-container-div:nth-child(1) {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.checkout-container h3 {
+    margin:0;
+    padding-top:1em;
+    padding-bottom:0.3em;
+}
+
+
+.longform, .checkout-header {
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+input[type=name] {
+    padding-top:12px;
+    padding-bottom:12px;
+    border: none;
+    width:100%;
+    background-color: var(--lightgray-color);
+}
+
+.checkout-container-div .form{
+    width:95%;
+}
+
+
+.checkout-container-div .longform{
+    width:100%;
+}
+
+.checkout-container-div:nth-child(2){
+    margin-top:8.5em;
+}
+
+.order-summary-container{
+    text-transform:none;
+    padding-bottom:3em;
+    font-weight:100;
+    background:var(--lightgray-color);
+}
+
+.specs-wrapper {
+    padding-top:1em;
+}
+
+.alignleft {
+    float: left;
+    font-size:1.2em;
+    font-weight:400;
+}
+.alignright {
+    float: right;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.order-summary {
+    padding:2em;
+
+}
+
+.order-listing-desc {
+    padding-left:1em;
+}
+
+.order-summary h1 {
+    font-weight:bold;
+    padding-bottom:1em;
+}
+
+.order-summary h4 {
+    display:inline;
+    font-size:1.2em;
+    font-weight:400;
+}
+
+.order-summary-listing{
+    padding-bottom:1em;
+}
+.order-summary-listing div {
+    display:inline 
+}
+
+.order-summary-image {
+    width: 5em;
+    display:inline;
+    height:5em;
+    object-fit: cover;
+}
+
+/*CHECKBOX*/
+/*from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+
+
+/* Create a custom checkbox */
+
+.check-wrapper{
+    padding-top:2em;
+}
+
+.check-wrapper h4 {
+    font-size:0.7em;
+    padding-top:0.2em;
+}
+
+
+.check-wrapper h1{
+    padding-bottom:1em;
+}
+
+.check-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    width:100%;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius:100%;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check-container input:checked ~ .checkmark {
+    background-color:var(--cto-color);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /**BTN**/
+
+.buttons-order-summary {
+    width:100%;
+    margin-top:5em;
+}
+  
+.button {
+    background-color: #6EB78E;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--lightgray-color);
+    color: black;
+}
+
+
+
 /*footer*/
 
 /***FOOTER****/
