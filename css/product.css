@@ -39,6 +39,8 @@
 }
 
 
+/***Keywords in the product description ***/
+
 .keywords {
     display:grid;
     width:60%;
@@ -126,10 +128,11 @@
   
 }
 
-
 .button-placement {
     padding-top:2em;
 }
+
+/***REVIEWS ***/
 
 .review-item {
     padding-top:2em;
@@ -170,6 +173,8 @@
 .img-center {
     width:100%;
 }
+
+/*** Adjust middle section text copy ***/
 
 .mid-sec {
     margin-top:3em!important;

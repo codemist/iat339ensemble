@@ -226,7 +226,7 @@ h2 {
     padding-right: 15%;
     text-align: center;
 }
-
+/**Change padding of middle text section**/
 @media screen and (min-width:1200px){
     
 .mid-sec {
@@ -238,12 +238,10 @@ h2 {
 }
 }
 
-
 .mid-sec h4 {
     font-weight:300;
     line-height:150%;
 }
-
 
 .hero-text h4 {
     font-weight: 200;
@@ -255,6 +253,7 @@ h2 {
 
 }
 
+/**Media Query for hero section and middle section**/
 
 @media screen and (max-width:800px) {
     .mid-sec {
@@ -273,6 +272,7 @@ h2 {
     .hero-text h4 {
         width:100%;
     }
+    /**Change hero Image depending on screen size**/
       .img-spread{
         display:none;
     }  
@@ -283,9 +283,9 @@ h2 {
 }
 
 .hero-text h1 {
-    
     font-size:2.5em;
 }
+
 
 .cta-main {
     display: inline-block;
@@ -742,6 +742,7 @@ input[type=email] {
     padding-left: 2em;
 }
 
+/**Change Footer Grid depending on screen size **/
 @media screen and (max-width:520px) {
     .footer-container {
         grid-template-columns: 1fr;
